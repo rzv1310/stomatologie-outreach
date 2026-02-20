@@ -1,3 +1,4 @@
+import type { Context } from "https://edge.netlify.com";
 import contacts from "../../data/contacts.json" with { type: "json" };
 
 const BASE_DOMAIN = "seo-doctor.ro";
@@ -17,7 +18,7 @@ const clinicMap = new Map<string, ClinicContact>(
   (contacts as ClinicContact[]).map((c) => [c.subdomain, c]),
 );
 
-function buildOgTags(clinic: ClinicContact, url: string): Record<string, string> {
+function buildOgTags(clinic: ClinicContact, url: string) {
   const title = `${clinic.clinic_name} | ${clinic.city}`;
   const description = `Cabinet stomatologic în ${clinic.city}, ${clinic.county}. Implantologie, ortodonție, estetică dentară și chirurgie orală. Programează o consultație.`;
   const ogImage = `${url}og/${clinic.subdomain}.png`;
@@ -25,7 +26,7 @@ function buildOgTags(clinic: ClinicContact, url: string): Record<string, string>
   return { title, description, ogImage };
 }
 
-export default async (request: Request, context: any) => {
+export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
   const hostname = url.hostname;
 
