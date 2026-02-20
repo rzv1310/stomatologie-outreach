@@ -112,13 +112,8 @@ export default async (request: Request, context: Context) => {
   const url = new URL(request.url);
   const hostname = url.hostname;
 
-  // Only process HTML page requests, not assets
-  const accept = request.headers.get("accept") || "";
-  if (!accept.includes("text/html")) {
-    return context.next();
-  }
-
-  if (url.pathname.match(/\.(js|css|png|jpg|svg|ico|json|woff2?|ttf)$/)) {
+  // Skip asset requests
+  if (url.pathname.match(/\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff2?|ttf|map)$/)) {
     return context.next();
   }
 
