@@ -2,6 +2,13 @@
   command = "npm run build"
   publish = "out"
 
+[functions]
+  directory = "netlify/functions"
+
+[[edge_functions]]
+  function = "og"
+  path = "/*"
+
 # SPA fallback — serve index.html for all routes
 [[redirects]]
   from = "/*"
