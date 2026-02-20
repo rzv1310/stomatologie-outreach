@@ -1,0 +1,972 @@
+[
+    {
+        "clinic_name": "CABINET DENTAR MUNTEANU ALEXEI SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, Str. 1 Decembrie 1918, Nr.8, Bl.s8, Et.parter, Ap.194",
+        "phone": "+40751106451",
+        "administrator": "",
+        "subdomain": "munteanu-alexei",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DIGITALSMILEDESIGN SRL",
+        "county": "Bacău",
+        "city": "Bacău",
+        "address": "Jud. Bacău, Mun. Bacău, Str. Licurici, Nr.9",
+        "phone": "+40745343683",
+        "administrator": "Moales Bogdan Vasile",
+        "subdomain": "digitalsmiledesign",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98639.98293466694!2d26.82645907145071!3d46.56401291783399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b570183882e30b%3A0x2659d504aae13301!2zQmFjxIN1!5e1!3m2!1sen!2sro!4v1771593105237!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DR. ANDREI ALEXANDRU PIRVUICA SRL",
+        "county": "Dolj",
+        "city": "Filiași",
+        "address": "Jud. Dolj, Ors. Filiași, Bld. Racoteanu, Nr.164c, Bl.k6, Sc.1, Ap.3",
+        "phone": "+40761229932",
+        "administrator": "",
+        "subdomain": "andrei-alexandru-pirvuica",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25559.100101342712!2d23.49357554743667!3d44.55219833093747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752ee40681225bf%3A0x164b0a8fa2f4ac9b!2zRmlsaWHImWk!5e1!3m2!1sen!2sro!4v1771593580799!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "LUCDENTAL SRL",
+        "county": "Bihor",
+        "city": "Oradea",
+        "address": "Jud. Bihor, Mun. Oradea, Str. Sovata, Nr.54, Bl.c5, Et.4, Ap.29",
+        "phone": "+40740576648",
+        "administrator": "Luculescu Gheorghe",
+        "subdomain": "lucdental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97707.55601575645!2d21.85504392323195!3d47.074682164613066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474647e368762353%3A0x1b55a486d65d5344!2sOradea!5e1!3m2!1sen!2sro!4v1771593723132!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CABINET DENTAR BATAR SVETLANA SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, 1 Decembrie 1918, Nr.8, Bl.s8, Et.parter, Ap.194",
+        "phone": "+40765529370",
+        "administrator": "",
+        "subdomain": "batar-svetlana",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "3DENTAL SRL",
+        "county": "Timiș",
+        "city": "Timișoara",
+        "address": "Jud. Timiș, Mun. Timișoara, Str. Leandrului, Nr.2a, Et.1, Ap.4",
+        "phone": "+40748596014",
+        "administrator": "",
+        "subdomain": "3dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100125.91613805448!2d21.134189408322914!3d45.74115474063842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677dcb0fb5a7%3A0x537faf6473936749!2sTimi%C8%99oara!5e1!3m2!1sen!2sro!4v1771594052516!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "PRIME DENTAL CENTER SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 2",
+        "address": "Municipiul București, Sector 2, Sos Pipera, Nr.61, Bl.2, Sc.2, Et.11duplex, Ap.203",
+        "phone": "+40748772448",
+        "administrator": "Purice Ioana",
+        "subdomain": "prime-dental-center",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8e7288fb565%3A0x80ecf2e8b912cc1e!2sSector%202%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593946025!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ROTARAS DENT SRL",
+        "county": "Vaslui",
+        "city": "Bârlad",
+        "address": "Jud. Vaslui, Mun. Bârlad, Str. Mihai Eminescu, Nr.46",
+        "phone": "+40762888632",
+        "administrator": "Rotaras Iurie",
+        "subdomain": "rotaras-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49621.99731407461!2d27.62720274580773!3d46.23089910053386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b5dd613e6bf583%3A0xe93b835203ee1a4f!2zQsOicmxhZA!5e1!3m2!1sen!2sro!4v1771593242526!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "AADENTO GROUP SRL",
+        "county": "Ilfov",
+        "city": "Voluntari",
+        "address": "Jud. Ilfov, Ors. Voluntari, Bld. Voluntari, Nr.85, Spatiul Nr.17. Camera 2, Et.5",
+        "phone": "+40770226025",
+        "administrator": "Aad Saad Alexandru",
+        "subdomain": "aadento-group",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51155.846353201596!2d26.11591407055255!3d44.50932160489795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f836062f6549%3A0x8c44856b94b95b43!2sVoluntari!5e1!3m2!1sen!2sro!4v1771594189520!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SMILELINE ORTHO SRL",
+        "county": "Sibiu",
+        "city": "Sibiu",
+        "address": "Jud. Sibiu, Mun. Sibiu, Str. Avrig, Nr.4-8, Camera 1, Sc.a, Et.2, Ap.46",
+        "phone": "+40732294778",
+        "administrator": "Blebea Daniela Doinita",
+        "subdomain": "smileline-ortho",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100050.69048198833!2d24.057437810339888!3d45.78308720177815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c6788fd2c1cd5%3A0x3ade9d214e3390b4!2sSibiu!5e1!3m2!1sen!2sro!4v1771594021316!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ASIRE SRL",
+        "county": "Timiș",
+        "city": "Timișoara",
+        "address": "Jud. Timiș, Mun. Timișoara, Cal. Martirilor 1989, Nr.42, Sc.c, Ap.3",
+        "phone": "+40730728314",
+        "administrator": "Azar Robert Ramzi",
+        "subdomain": "asire",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100125.91613805448!2d21.134189408322914!3d45.74115474063842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677dcb0fb5a7%3A0x537faf6473936749!2sTimi%C8%99oara!5e1!3m2!1sen!2sro!4v1771594052516!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CHC DENTAL CLINIC BY DR. CORINA CHIRIAC SRL",
+        "county": "Buzău",
+        "city": "Valea Râmnicului",
+        "address": "Jud. Buzău, Sat Valea Râmnicului Com. Valea Râmnicului, Str. Principala, Nr.135",
+        "phone": "+40771556532",
+        "administrator": "Chiriac Corina",
+        "subdomain": "chc-dental-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12600.763099677744!2d27.031587321106464!3d45.36063311428782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b155a62198a097%3A0xbac948cd9cfae31c!2sValea%20R%C3%A2mnicului!5e1!3m2!1sen!2sro!4v1771594179486!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MEETDENT SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Fagaras, Nr.10, Bl.d8, Sc.1, Et.3, Ap.13",
+        "phone": "+40736372550",
+        "administrator": "Mitran Bogdan Mihai",
+        "subdomain": "meetdent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ENDODENT CLINIC PITILA SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 3",
+        "address": "Municipiul București, Sector 3, Str Vitioara, Nr.48, Lot 1. Parter, Sc.b, Ap.17",
+        "phone": "+40724578033",
+        "administrator": "",
+        "subdomain": "endodent-clinic-pitila",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51235.758530955434!2d26.119332819500585!3d44.418198000958355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1febb27ed5e39%3A0x6636dc1113205e10!2sSector%203%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593955894!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CORA DENTAL SRL",
+        "county": "Satu Mare",
+        "city": "Satu Mare",
+        "address": "Jud. Satu Mare, Mun. Satu Mare, Str. Jocului, Bl.uj6, Ap.8",
+        "phone": "+40744200727",
+        "administrator": "Corosan Annamaria",
+        "subdomain": "cora-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192728.6397272204!2d22.718834822262895!3d47.80299780320255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47380434f4e50c2b%3A0x25e464296f0c3074!2sSatu%20Mare!5e1!3m2!1sen!2sro!4v1771593922939!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ORTHODENT TM SRL",
+        "county": "Hunedoara",
+        "city": "Hunedoara",
+        "address": "Jud. Hunedoara, Mun. Hunedoara, Str. Mărțișorului, Bl.n3, Ap.17",
+        "phone": "+40731716162",
+        "administrator": "Trandafir Maria Cristina",
+        "subdomain": "orthodent-tm",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50043.22529376775!2d22.86651768913564!3d45.763157446323824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474e8a547396159f%3A0x19f38ced3c35233b!2sHunedoara!5e1!3m2!1sen!2sro!4v1771593683576!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "BOCA DENTAL CLINICS SRL",
+        "county": "Suceava",
+        "city": "Suceava",
+        "address": "Jud. Suceava, Mun. Suceava, Str. Magnoliei, Nr.24, Bl.c1, Ap.1",
+        "phone": "+40772102102",
+        "administrator": "",
+        "subdomain": "boca-dental-clinics",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96621.99860449116!2d26.179204752411437!3d47.663937615995636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734fc1fc6ebe593%3A0x1ec62d12b9588ddd!2sSuceava!5e1!3m2!1sen!2sro!4v1771594032604!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "IOSIF DENT SRL",
+        "county": "Ilfov",
+        "city": "Tunari",
+        "address": "Jud. Ilfov, Sat Tunari Com. Tunari, Str. Alexandru Ioan Cuza, Nr.26-28, Parter. Camera Nr. 1",
+        "phone": "+40729746902",
+        "administrator": "Jona Yousif Waled Mansur",
+        "subdomain": "iosif-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25562.259121929426!2d26.11394389741603!3d44.545004734724664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b21d0b80d534b7%3A0x5930a5e5c2e620d8!2s077180%20Tunari!5e1!3m2!1sen!2sro!4v1771594105304!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "BRIDENT CLINIC SRL",
+        "county": "Ilfov",
+        "city": "Dobroești",
+        "address": "Jud. Ilfov, Sat Dobroești Com. Dobroești, Str. Trifoiului, Nr.37, Parter, Ap.1",
+        "phone": "+40720494795",
+        "administrator": "Coltatu Mihaela",
+        "subdomain": "brident-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12801.008337295792!2d26.16795702045479!3d44.454391803934534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f96adbc485af%3A0xdba9fad5b5e5da7e!2s077085%20Dobroe%C8%99ti!5e1!3m2!1sen!2sro!4v1771593542857!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ONE DENTAL SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Vidra, Nr.45c",
+        "phone": "+40745459365",
+        "administrator": "",
+        "subdomain": "one-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "TAME SRL",
+        "county": "Brașov",
+        "city": "Brașov",
+        "address": "Jud. Brașov, Mun. Brașov, Cal. București, Nr.28, Bl.s4, Sc.b, Ap.15",
+        "phone": "+40751315468",
+        "administrator": "",
+        "subdomain": "tame",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100284.6610286859!2d25.51406240406702!3d45.65256847836167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2zQnJhyJlvdg!5e1!3m2!1sen!2sro!4v1771593370437!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DR. ANGELICA -FLORENTINA SRL",
+        "county": "Teleorman",
+        "city": "Roșiori de Vede",
+        "address": "Jud. Teleorman, Mun. Roșiori de Vede, Aleea C.F.R., Bl.5, Sc.a, Et.4, Ap.19",
+        "phone": "+40735376473",
+        "administrator": "Celeapca Angelica Florentina",
+        "subdomain": "angelica-florentina",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25754.960841976583!2d24.968147796158313!3d44.104438765971004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40adae333b1c48c9%3A0x2d41960bcd4c6c2e!2s145100%20Ro%C8%99iorii%20de%20Vede!5e1!3m2!1sen!2sro!4v1771593813871!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MITIS SRL",
+        "county": "Harghita",
+        "city": "Zetea",
+        "address": "Jud. Harghita, Sat Zetea Com. Zetea, Str. Hegy, Nr.127",
+        "phone": "+40749161022",
+        "administrator": "Halmagyi Szilard",
+        "subdomain": "mitis",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24738.87947562555!2d25.351080802803374!3d46.390224801464925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474b18cdbf4cca27%3A0x61adbdb202190ab2!2s537360%20Zetea!5e1!3m2!1sen!2sro!4v1771594198248!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DR.MARIANA BERBEC SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 3",
+        "address": "Municipiul București, Sector 3, Str Valeriu Braniste, Nr.56, Camera 2, Bl.5, Sc.b, Et.p, Ap.1b",
+        "phone": "+40723711773",
+        "administrator": "",
+        "subdomain": "mariana-berbec",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51235.758530955434!2d26.119332819500585!3d44.418198000958355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1febb27ed5e39%3A0x6636dc1113205e10!2sSector%203%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593955894!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "TIMUS DENTAL CLINIC SRL",
+        "county": "Brașov",
+        "city": "Brașov",
+        "address": "Jud. Brașov, Mun. Brașov, Str. Tablei, Nr.9",
+        "phone": "+40726706077",
+        "administrator": "",
+        "subdomain": "timus-dental-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100284.6610286859!2d25.51406240406702!3d45.65256847836167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2zQnJhyJlvdg!5e1!3m2!1sen!2sro!4v1771593370437!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "HAPPY TOOTH SRL",
+        "county": "Sibiu",
+        "city": "Șelimbăr",
+        "address": "Jud. Sibiu, Sat Șelimbăr Com. Șelimbăr, Str. Unirii, Nr.14a",
+        "phone": "+40745681355",
+        "administrator": "",
+        "subdomain": "happy-tooth",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25020.261619876994!2d24.16109995095995!3d45.766169686632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c5df200868dab%3A0xdc34ace26934db87!2zNTU3MjYwIMiYZWxpbWLEg3I!5e1!3m2!1sen!2sro!4v1771593997364!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENTAL CODE SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 1",
+        "address": "Municipiul București, Sector 1, Str Sevastopol, Nr.17c",
+        "phone": "+40745386319",
+        "administrator": "",
+        "subdomain": "dental-code",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b203b98b88e25f%3A0x2ea696fcfcb19014!2sSector%201%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593936759!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "AJIA DENT SRL",
+        "county": "Gorj",
+        "city": "Tismana",
+        "address": "Jud. Gorj, Sat Tismana Ors. Tismana, Str Tismana, Nr.195, Corpul C1. Spatiul Comercial Nr. 5",
+        "phone": "+40734628126",
+        "administrator": "",
+        "subdomain": "ajia-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25338.446489402177!2d22.929067498878332!3d45.052418316693625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475206511a9d3c53%3A0xa33d44fa6e9861e7!2s217495%20Tismana!5e1!3m2!1sen!2sro!4v1771594072039!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ANA MARTIN DENTAL SRL",
+        "county": "Constanța",
+        "city": "Constanța",
+        "address": "Jud. Constanța, Mun. Constanța, Bld. Tomis, Nr.267, Camera 1, Bl.t4, Sc.b, Et.4, Ap.34",
+        "phone": "+40721891681",
+        "administrator": "",
+        "subdomain": "ana-martin-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102886.09135151248!2d28.547605834414405!3d44.18113624560874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae54a64345229%3A0x637be1cd3e654850!2sConstan%C8%9Ba!5e1!3m2!1sen!2sro!4v1771593502532!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "AXISSMILE SRL",
+        "county": "Bistrița-Năsăud",
+        "city": "Bistrița",
+        "address": "Jud. Bistrița-Năsăud, Mun. Bistrița, Str. 1 Decembrie, Nr.14, Sc.a, Et.parter, Ap.1",
+        "phone": "+40741051831",
+        "administrator": "",
+        "subdomain": "axissmile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97600.60048004866!2d24.411714654795585!3d47.132988155798124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4749f7b004cf46c7%3A0xa78abae723b4e25c!2zQmlzdHJpyJth!5e1!3m2!1sen!2sro!4v1771593320906!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "TEAM IMPLANT SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 2",
+        "address": "Municipiul București, Sector 2, Str Mihai Eminescu, Nr.185, Camera 2, Bl.31b, Sc.a, Ap.13",
+        "phone": "+40741178134",
+        "administrator": "Referendaru Alexandru Daniel",
+        "subdomain": "team-implant",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8e7288fb565%3A0x80ecf2e8b912cc1e!2sSector%202%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593946025!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ACCESS SMILE SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 1",
+        "address": "Municipiul București, Sector 1, Str Virgil Madgearu, Nr.19d, Camera 6, Et.parter, Ap.1",
+        "phone": "+40725561970",
+        "administrator": "",
+        "subdomain": "access-smile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b203b98b88e25f%3A0x2ea696fcfcb19014!2sSector%201%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593936759!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "NOBELLEDENT SOLUTIONS SRL",
+        "county": "Argeș",
+        "city": "Topoloveni",
+        "address": "Jud. Argeș, Ors. Topoloveni, Str. Vitichesti, Nr.39",
+        "phone": "+40733051133",
+        "administrator": "Arsene Andreea Amalia",
+        "subdomain": "nobelledent-solutions",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25444.12640772136!2d25.065092698187666!3d44.81339134317997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b291312e833da3%3A0xd0d77f46732f419b!2sTopoloveni!5e1!3m2!1sen!2sro!4v1771594080275!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENTAL BY DR. LIGIA SRL",
+        "county": "Arad",
+        "city": "Bârsa",
+        "address": "Jud. Arad, Sat Bârsa Com. Bârsa, , Nr.252",
+        "phone": "+40754771404",
+        "administrator": "",
+        "subdomain": "dental-by-dr-ligia",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12371.80218772621!2d22.06007476906464!3d46.379799487656015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474f5a76ce7aff27%3A0x82754747e588469a!2s317025%20B%C3%A2rsa!5e1!3m2!1sen!2sro!4v1771593300713!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENTIVIA SRL",
+        "county": "Ilfov",
+        "city": "Tunari",
+        "address": "Jud. Ilfov, Sat Tunari Com. Tunari, Str. Avram Iancu, Nr.48, Camera 1, Et.parter",
+        "phone": "+40744954810",
+        "administrator": "",
+        "subdomain": "dentivia",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25562.259121929426!2d26.11394389741603!3d44.545004734724664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b21d0b80d534b7%3A0x5930a5e5c2e620d8!2s077180%20Tunari!5e1!3m2!1sen!2sro!4v1771594105304!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "AR SMILE DENTAL SRL",
+        "county": "Gorj",
+        "city": "Frâncești, Peștișani",
+        "address": "Jud. Gorj, Sat Frâncești Com. Peștișani, Str. Bistriței, Nr.231, Camera Nr. 1",
+        "phone": "+40726215266",
+        "administrator": "Mitrache Robert Marian",
+        "subdomain": "ar-smile-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25323.092713367656!2d23.03742864897871!3d45.08706264832768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474df7b577788b8d%3A0x9cf330871bd5b87c!2zRnLDom5jZciZdGk!5e1!3m2!1sen!2sro!4v1771593610229!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "TEETH UB SRL",
+        "county": "Caraș-Severin",
+        "city": "Caransebeș",
+        "address": "Jud. Caraș-Severin, Mun. Caransebeș, Str. Cernei, Nr.18",
+        "phone": "+40727308236",
+        "administrator": "Chiritescu Aurelian",
+        "subdomain": "teeth-ub",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50358.41771076311!2d22.17465533106047!3d45.41071535040429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474e31c2a1df1575%3A0x73fc927250542a2e!2s325400%20Caransebe%C8%99!5e1!3m2!1sen!2sro!4v1771593471690!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SAIRIDENT SRL",
+        "county": "Suceava",
+        "city": "Suceava",
+        "address": "Jud. Suceava, Mun. Suceava, Str. Amurgului, Bl.104, Sc.a, Et.2, Ap.8",
+        "phone": "+40742765823",
+        "administrator": "Airinei Patricia Vasilica",
+        "subdomain": "sairident",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96621.99860449116!2d26.179204752411437!3d47.663937615995636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4734fc1fc6ebe593%3A0x1ec62d12b9588ddd!2sSuceava!5e1!3m2!1sen!2sro!4v1771594032604!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SIMSMILE SRL",
+        "county": "Dolj",
+        "city": "Dăbuleni",
+        "address": "Jud. Dolj, Ors. Dăbuleni, Str. Nicolae Grigorescu, Nr.131",
+        "phone": "+40758920426",
+        "administrator": "",
+        "subdomain": "simsmile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25886.163036886832!2d24.0712863453027!3d43.802467273672434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ac968d497c63c1%3A0xb47ee171e7966c8!2zRMSDYnVsZW5p!5e1!3m2!1sen!2sro!4v1771593532636!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SORRIDENTE SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 1",
+        "address": "Municipiul București, Sector 1, Șos. Străulești, Nr.29a, Constructia Bloc. Camera In Suprafata De 14.5 Mp, Sc.c, Et.2, Ap.77",
+        "phone": "+40737492710",
+        "administrator": "Floares Oana",
+        "subdomain": "sorridente",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b203b98b88e25f%3A0x2ea696fcfcb19014!2sSector%201%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593936759!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "AG PERFECT SMILE SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Rovine, Bl.j47, Sc.1, Ap.15",
+        "phone": "+40785202947",
+        "administrator": "",
+        "subdomain": "ag-perfect-smile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CABINET DENTAR BATAR INA SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, Str. 1 Decembrie 1918, Nr.8, Bl.s8, Et.parter, Ap.194",
+        "phone": "+40748099376",
+        "administrator": "Batar Ina",
+        "subdomain": "batar-ina",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "BIOMIMETIC DENT SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 6",
+        "address": "Municipiul București, Sector 6, Bld 1 Mai, Nr.13, Bl.c2, Sc.1, Ap.4",
+        "phone": "+40724504348",
+        "administrator": "Hornoiu Laura Mihaela",
+        "subdomain": "biomimetic-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51214.08529404909!2d25.978730069785875!3d44.442926524898034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b201a16658d64b%3A0x3663e3d34269a4cc!2sSector%206%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593981326!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MANOVA SMILE SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Amaradia, Nr.25, Bl.g6, Sc.1, Et.4, Ap.17",
+        "phone": "+40762350232",
+        "administrator": "",
+        "subdomain": "manova-smile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CALISTA DENT SRL",
+        "county": "Mureș",
+        "city": "Târgu Mureș",
+        "address": "Jud. Mureș, Mun. Târgu Mureș, Str. Predeal, Nr.80/a",
+        "phone": "+40745200370",
+        "administrator": "Gazdac Dorina Codruta",
+        "subdomain": "calista-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49338.95087228474!2d24.511398494521064!3d46.5431546905365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474bb64a553e9177%3A0xb1573a839869d90d!2zVMOicmd1IE11cmXImQ!5e1!3m2!1sen!2sro!4v1771594040638!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "NOVA DENTAL CLINIC SRL",
+        "county": "Prahova",
+        "city": "Ploiești",
+        "address": "Jud. Prahova, Mun. Ploiești, Str. Anton Pann, Nr.2a",
+        "phone": "+40799977438",
+        "administrator": "Gheorghe Laurentiu",
+        "subdomain": "nova-dental-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101566.48403998127!2d25.927492019724777!3d44.93227305456734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b249f6a8d6eff7%3A0xb3fe6965e659119!2zUGxvaWXImXRp!5e1!3m2!1sen!2sro!4v1771593731608!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "PHIDENT CONCEPT SRL",
+        "county": "Bihor",
+        "city": "Oradea",
+        "address": "Jud. Bihor, Mun. Oradea, Str. Săvineștilor, Nr.1",
+        "phone": "+40774457984",
+        "administrator": "",
+        "subdomain": "phident-concept",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97707.55601575645!2d21.85504392323195!3d47.074682164613066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474647e368762353%3A0x1b55a486d65d5344!2sOradea!5e1!3m2!1sen!2sro!4v1771593723132!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MATEI FILIP DENT SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 1",
+        "address": "Municipiul București, Sector 1, Str Clucereasa Elena, Nr.4",
+        "phone": "+40736391610",
+        "administrator": "Filip Matei",
+        "subdomain": "matei-filip-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b203b98b88e25f%3A0x2ea696fcfcb19014!2sSector%201%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593936759!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "A&C ENDO DENT SRL",
+        "county": "Gorj",
+        "city": "Hirișești",
+        "address": "Jud. Gorj, Sat Hirișești Ors. Novaci, Str. Hirisesti, Nr.34",
+        "phone": "+40769052022",
+        "administrator": "Ciocan Andreea Elena",
+        "subdomain": "ac-endo-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12641.627478481749!2d23.630990968006643!3d45.17685553712796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474d9bd891b7e90f%3A0xf98376629987cf30!2zSGlyaciZZciZdGk!5e1!3m2!1sen!2sro!4v1771593653167!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "TAG DENT SRL",
+        "county": "Vâlcea",
+        "city": "Râmnicu Vâlcea",
+        "address": "Jud. Vâlcea, Mun. Râmnicu Vâlcea, Str. Dacia, Nr.9, Camera 1, Bl.14, Sc.a, Et.3, Ap.13",
+        "phone": "+40736939558",
+        "administrator": "Tomescu Andrei George",
+        "subdomain": "tag-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50632.34502619058!2d24.31167007980295!3d45.102670593740214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474d38a5241617a1%3A0x842353737a05a49a!2zUsOibW5pY3UgVsOibGNlYQ!5e1!3m2!1sen!2sro!4v1771593800922!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SIGANUR SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, Str. Mărășești, Nr.4",
+        "phone": "+40722159999",
+        "administrator": "Virtosu Ion",
+        "subdomain": "siganur",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "AMD DENT SRL",
+        "county": "Ilfov",
+        "city": "Domnești",
+        "address": "Jud. Ilfov, Sat Domnești Com. Domnești, Str. Chimirului, Nr.22, Ap.2",
+        "phone": "+40765030547",
+        "administrator": "",
+        "subdomain": "amd-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51246.261973939676!2d25.88578251936232!3d44.406209963589916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40adff4e5879873d%3A0x5456f363f5f45380!2s077090%20Domne%C8%99ti!5e1!3m2!1sen!2sro!4v1771593569314!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "STEORA SMILE SRL",
+        "county": "Ialomița",
+        "city": "Moldoveni",
+        "address": "Jud. Ialomița, Sat Moldoveni Com. Moldoveni, Str. Primăverii, Nr.2",
+        "phone": "+40724694306",
+        "administrator": "",
+        "subdomain": "steora-smile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12269.042956848025!2d26.788830722188788!3d46.8316146182839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40caa0de577e2c83%3A0x6ae2b209172828d9!2sMoldoveni!5e1!3m2!1sen!2sro!4v1771593715015!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "INSTADENT SRL",
+        "county": "Hunedoara",
+        "city": "Hunedoara",
+        "address": "Jud. Hunedoara, Mun. Hunedoara, Str. Ion Creanga, Nr.2, Ap.15",
+        "phone": "+40722278052",
+        "administrator": "Voic Radu Mihai",
+        "subdomain": "instadent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50043.22529376775!2d22.86651768913564!3d45.763157446323824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474e8a547396159f%3A0x19f38ced3c35233b!2sHunedoara!5e1!3m2!1sen!2sro!4v1771593683576!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "TGF PROFESSIONAL SRL",
+        "county": "Suceava",
+        "city": "Cajvana",
+        "address": "Jud. Suceava, Sat Cajvana Ors. Cajvana, Str. Ștefan cel Mare, Nr.93",
+        "phone": "+40757843693",
+        "administrator": "Tomascu Floarea",
+        "subdomain": "tgf-professional",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48274.61584043646!2d25.930105717144805!3d47.70323847665442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47345305b5785a89%3A0x84906298d7f42f98!2sCajvana!5e1!3m2!1sen!2sro!4v1771593403745!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "A.P. DENT SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. George Enescu, Nr.86, Bl.38, Sc.3, Ap.12",
+        "phone": "+40763441379",
+        "administrator": "Pleniceanu Alexandra Ramona",
+        "subdomain": "ap-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DR. ALEX DENTAL SRL",
+        "county": "Brașov",
+        "city": "Brașov",
+        "address": "Jud. Brașov, Mun. Brașov, Bld. Saturn, Nr.50, Cabinet 2, Bl.6",
+        "phone": "+40799778588",
+        "administrator": "Padurari Alexandr",
+        "subdomain": "alex-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100284.6610286859!2d25.51406240406702!3d45.65256847836167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2zQnJhyJlvdg!5e1!3m2!1sen!2sro!4v1771593370437!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ORTOFAIN SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Ion Tuculescu, Nr.14, Bl.a18, Sc.1, Ap.7",
+        "phone": "+40730023130",
+        "administrator": "Vaduva Elena Adriana",
+        "subdomain": "ortofain",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CRIDENTA SMILE SRL",
+        "county": "Neamț",
+        "city": "Săbăoani",
+        "address": "Jud. Neamț, Sat Săbăoani Com. Săbăoani, Str. Narciselor, Nr.2",
+        "phone": "+40764139354",
+        "administrator": "",
+        "subdomain": "cridenta-smile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24455.61697763805!2d26.844641954661494!3d47.01197726491508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40caba1a18180cb5%3A0x694a3b6f78ff66f1!2zU8SDYsSDb2FuaQ!5e1!3m2!1sen!2sro!4v1771593832642!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENTALMED ISE SRL",
+        "county": "Cluj",
+        "city": "Florești",
+        "address": "Jud. Cluj, Sat Florești Com. Florești, Str. Avram Iancu, Nr.418, Ap.2",
+        "phone": "+40743405387",
+        "administrator": "",
+        "subdomain": "dentalmed-ise",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24580.62254661954!2d23.478736903841206!3d46.73837701333243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474911d282927d79%3A0x80049c196fd285d2!2zRmxvcmXImXRp!5e1!3m2!1sen!2sro!4v1771593593587!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ENDORAY SRL",
+        "county": "Dolj",
+        "city": "Cârcea",
+        "address": "Jud. Dolj, Sat Cârcea Com. Cârcea, Str. Aeroportului, Nr.47",
+        "phone": "+40769416680",
+        "administrator": "Popa Raymond Gabriel Claudiu",
+        "subdomain": "endoray",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25680.37990721329!2d23.87079094664494!3d44.27536197641961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d59a02252d11%3A0xe7132cf9c7e811c4!2zQ8OicmNlYQ!5e1!3m2!1sen!2sro!4v1771593480655!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DR. CATERINA-STEFANIA SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Ștefan Odobleja, Nr.19, Bl.a13, Sc.2, Ap.8",
+        "phone": "+40773969899",
+        "administrator": "Bobaianu Caterina Stefania",
+        "subdomain": "caterina-stefania",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SHAPING SMILES SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Spania, Nr.28, Bl.o9, Sc.1, Et.4, Ap.16",
+        "phone": "+40769468855",
+        "administrator": "Catalina Andra Maria",
+        "subdomain": "shaping-smiles",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SMILENCE DENTAL STUDIO SRL",
+        "county": "Ilfov",
+        "city": "Tunari",
+        "address": "Jud. Ilfov, Sat Tunari Com. Tunari, Str. Rândunicii, Nr.19, Vila 7",
+        "phone": "+40744477747",
+        "administrator": "",
+        "subdomain": "smilence-dental-studio",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25562.259121929426!2d26.11394389741603!3d44.545004734724664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b21d0b80d534b7%3A0x5930a5e5c2e620d8!2s077180%20Tunari!5e1!3m2!1sen!2sro!4v1771594105304!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "NOVA IMPLANT SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 2",
+        "address": "Municipiul București, Sector 2, Str Mihai Eminescu, Nr.185, Camera 2, Bl.31b, Sc.a, Ap.13",
+        "phone": "+40741178134",
+        "administrator": "Referendaru Alexandru Daniel",
+        "subdomain": "nova-implant",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102349.05477856132!2d25.964776898779018!3d44.48803289562755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8e7288fb565%3A0x80ecf2e8b912cc1e!2sSector%202%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593946025!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DOGARUDENT SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, Str. Strungarilor, Nr.1, Bl.f2, Sc.4, Et.4, Ap.79",
+        "phone": "+40747874388",
+        "administrator": "Dogaru Adrian Sebastian",
+        "subdomain": "dogarudent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "COMDENT DENTAL CLINIC SRL",
+        "county": "Ilfov",
+        "city": "Bragadiru",
+        "address": "Jud. Ilfov, Ors. Bragadiru, Str. Crișul Repede, Nr.14-16n, Tarla 28. Parcelele 116/20. 116/21 (lot Nr.3/2/2/2)",
+        "phone": "+40730760081",
+        "administrator": "",
+        "subdomain": "comdent-dental-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102541.30399980956!2d25.90910454621053!3d44.378362680577084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40adffb0bc2eed5d%3A0xcde10fe9d1bf77ce!2sBragadiru!5e1!3m2!1sen!2sro!4v1771593339470!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MISCU DDS SRL",
+        "county": "Cluj",
+        "city": "Cluj-Napoca",
+        "address": "Jud. Cluj, Mun. Cluj-Napoca, Str. Tulcea, Nr.9, Bl.h4, Sc.1, Et.1, Ap.4",
+        "phone": "+40745658402",
+        "administrator": "Nistor Paul Andrei",
+        "subdomain": "miscu-dds",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98240.22719271891!2d23.53411210892342!3d46.78347363173412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e1!3m2!1sen!2sro!4v1771593493142!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "HATEM DENTAL CLINIC SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, Str. Galații Noi, Nr.8, Camera C2, Bl.l3, Ap.3",
+        "phone": "+40725085757",
+        "administrator": "",
+        "subdomain": "hatem-dental-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DR.AG DENTAL SRL",
+        "county": "Constanța",
+        "city": "Constanța",
+        "address": "Jud. Constanța, Mun. Constanța, Bld. Alexandru Lăpușneanu, Nr.115, Bl.al3, Sc.b, Et.4, Ap.24",
+        "phone": "+40723281868",
+        "administrator": "Georgescu Anca",
+        "subdomain": "ag-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102886.09135151248!2d28.547605834414405!3d44.18113624560874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae54a64345229%3A0x637be1cd3e654850!2sConstan%C8%9Ba!5e1!3m2!1sen!2sro!4v1771593502532!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "EPINGEAC DENTAL SRL",
+        "county": "Dolj",
+        "city": "Tunarii Vechi",
+        "address": "Jud. Dolj, Sat Tunarii Vechi Com. Poiana Mare, Str. Mihail Eminescu, Nr.22",
+        "phone": "+40771089924",
+        "administrator": "Epingeac Maria Madalina",
+        "subdomain": "epingeac-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12919.526006960925!2d23.103808020069714!3d43.91108689599482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475366e1a0c19909%3A0x8eab01b54cc1898c!2sTunarii%20Vechi!5e1!3m2!1sen!2sro!4v1771594114950!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "D&I DENTAL STUDIO SRL",
+        "county": "Constanța",
+        "city": "Constanța",
+        "address": "Jud. Constanța, Mun. Constanța, Str. Sg. Nicolae Grindeanu, Nr.66, Cam. 1, Bl.e7, Sc.e, Et.3, Ap.96",
+        "phone": "+40746786979",
+        "administrator": "Enea Diana Camelia",
+        "subdomain": "di-dental-studio",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102886.09135151248!2d28.547605834414405!3d44.18113624560874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae54a64345229%3A0x637be1cd3e654850!2sConstan%C8%9Ba!5e1!3m2!1sen!2sro!4v1771593502532!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "NATDENT SRL",
+        "county": "Cluj",
+        "city": "Cluj-Napoca",
+        "address": "Jud. Cluj, Mun. Cluj-Napoca, Bld. Constantin Brancusi, Nr.30",
+        "phone": "+40774065227",
+        "administrator": "Rednic Natalia, Rednic Natalia Viorela",
+        "subdomain": "natdent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98240.22719271891!2d23.53411210892342!3d46.78347363173412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c1f916c0b8b%3A0xbbc601c331f148b!2sCluj-Napoca!5e1!3m2!1sen!2sro!4v1771593493142!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ILUMINA DENT SRL",
+        "county": "Constanța",
+        "city": "Constanța",
+        "address": "Jud. Constanța, Mun. Constanța, Str. Soveja, Nr.19, Bl.v3, Sc.b, Et.2, Ap.42",
+        "phone": "+40723999220",
+        "administrator": "",
+        "subdomain": "ilumina-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102886.09135151248!2d28.547605834414405!3d44.18113624560874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40bae54a64345229%3A0x637be1cd3e654850!2sConstan%C8%9Ba!5e1!3m2!1sen!2sro!4v1771593502532!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENTIMA PREMIUM SRL",
+        "county": "Tulcea",
+        "city": "Tulcea",
+        "address": "Jud. Tulcea, Mun. Tulcea, Str. Sofia Nadejde, Nr.13",
+        "phone": "+40749204742",
+        "administrator": "Dima Mihaela",
+        "subdomain": "dentima-premium",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50564.33670372033!2d28.74946572834521!3d45.179302746181904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b75948b811aab5%3A0xa16c50a0d8a6e42a!2sTulcea!5e1!3m2!1sen!2sro!4v1771594097916!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DIAMEDDENT SRL",
+        "county": "Bistrița-Năsăud",
+        "city": "Prundu Bârgăului",
+        "address": "Jud. Bistrița-Năsăud, Sat Prundu Bârgăului Com. Prundu Bârgăului, Str. Bistricioarei, Nr.5",
+        "phone": "+40744162878",
+        "administrator": "Pavalean Diana Antonela",
+        "subdomain": "diameddent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24355.92364223181!2d24.698698255315975!3d47.229306396666956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474a0075b5862279%3A0x9ce6ae161a5f0cee!2zUHJ1bmR1IELDonJnxIN1bHVp!5e1!3m2!1sen!2sro!4v1771593740006!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "VOXEL DENT SRL",
+        "county": "Iași",
+        "city": "Iași",
+        "address": "Jud. Iași, Mun. Iași, Aleea Domenii, Nr.29-31, Mansarda, Bl.c1, Ap.5",
+        "phone": "+40756087660",
+        "administrator": "Rosca Danut, Rosca Rares George",
+        "subdomain": "voxel-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97557.94796125618!2d27.50457007725182!3d47.156224491816154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb7cf639ddbb%3A0x7ccb80da5426f53c!2zSWHImWk!5e1!3m2!1sen!2sro!4v1771593693238!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENTAL DR.REVENCO SRL",
+        "county": "Ilfov",
+        "city": "Voluntari",
+        "address": "Jud. Ilfov, Ors. Voluntari, Șos. Pipera-Tunari, Nr.200a, Bl.corp B, Et.5, Ap.6",
+        "phone": "+40752512128",
+        "administrator": "Revenco Constantin",
+        "subdomain": "dental-dr-revenco",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51155.846353201596!2d26.11591407055255!3d44.50932160489795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f836062f6549%3A0x8c44856b94b95b43!2sVoluntari!5e1!3m2!1sen!2sro!4v1771594189520!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "RAPID DENT IMPLANT SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 5",
+        "address": "Municipiul București, Sector 5, Str Dr. Joseph Lister, Nr.44b, Mansarda. Camera 2",
+        "phone": "+40726206012",
+        "administrator": "",
+        "subdomain": "rapid-dent-implant",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51267.533067357675!2d26.083945819082352!3d44.38192448917477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fff4b15a4da3%3A0x91eddbd9e8e17e4e!2sSector%205%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593971219!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MEDIVIN CLINIC SRL",
+        "county": "Sălaj",
+        "city": "Aghireș, Meseșenii de Jos",
+        "address": "Jud. Sălaj, Sat Aghireș Com. Meseșenii de Jos, Str. Centurii, Nr.14a",
+        "phone": "+40770465121",
+        "administrator": "Vintila Andrei Robert, Buie Camelia Maria",
+        "subdomain": "medivin-clinic",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24385.913444723632!2d22.992614244432144!3d47.16400975374001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474867dddf54a5ab%3A0xff52ca6941622125!2s457246%20Aghire%C8%99!5e1!3m2!1sen!2sro!4v1771593079743!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DALIANA STOMADENT SRL",
+        "county": "Bistrița-Năsăud",
+        "city": "Valea Borcutului",
+        "address": "Jud. Bistrița-Năsăud, Loc. Valea Borcutului Ors. Sângeorz-Băi, , Nr.88",
+        "phone": "+40744537992",
+        "administrator": "",
+        "subdomain": "daliana-stomadent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12144.10567666621!2d24.629030172597325!3d47.376483569438776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473603e4418b7409%3A0xba2a76e8b7d26c6f!2s425302%20Valea%20Borcutului!5e1!3m2!1sen!2sro!4v1771594137569!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ESSASMILE SRL",
+        "county": "Timiș",
+        "city": "Timișoara",
+        "address": "Jud. Timiș, Mun. Timișoara, Str. Dr. Ioan Muresan, Nr.105, Sc.b, Et.3, Ap.14",
+        "phone": "+40731040428",
+        "administrator": "Bicu Vanessa",
+        "subdomain": "essasmile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100125.91613805448!2d21.134189408322914!3d45.74115474063842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4745677dcb0fb5a7%3A0x537faf6473936749!2sTimi%C8%99oara!5e1!3m2!1sen!2sro!4v1771594052516!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ROTARU DENTLAB SRL",
+        "county": "Galați",
+        "city": "Galați",
+        "address": "Jud. Galați, Mun. Galați, Str. Războieni, Nr.19 B, Biroul 1, Bl.3, Sc.1, Ap.9",
+        "phone": "+40726972747",
+        "administrator": "Rotaru Virgiliu",
+        "subdomain": "rotaru-dentlab",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100668.61646561032!2d27.965094493775887!3d45.43774938356917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6dee589f2c4b5%3A0x53d7342f252d702b!2zR2FsYcibaQ!5e1!3m2!1sen!2sro!4v1771593620658!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "POPP & POPP DENTAL PROFESSIONALS SRL",
+        "county": "Buzău",
+        "city": "Buzău",
+        "address": "Jud. Buzău, Mun. Buzău, Str. George Emil Palade, Nr.22",
+        "phone": "+40721366381",
+        "administrator": "Popp Teodor Mircea, Popp Tiberiu Cristian",
+        "subdomain": "popp-popp-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50591.29292330048!2d26.772994177989887!3d45.148940528391556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b15fd8fd6ff6af%3A0xc32cfa9242caeca7!2zQnV6xIN1!5e1!3m2!1sen!2sro!4v1771593385518!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CLINICA DIN DEAL SRL",
+        "county": "Maramureș",
+        "city": "Moisei",
+        "address": "Jud. Maramureș, Sat Moisei Com. Moisei, , Nr.102 B",
+        "phone": "+40748380381",
+        "administrator": "",
+        "subdomain": "clinica-din-deal",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48325.957106185524!2d24.503073007924204!3d47.647773299302266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736154be72f074b%3A0x154d4cdb2fc8fc6f!2s437195%20Moisei!5e1!3m2!1sen!2sro!4v1771593702307!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "EVIDENT AESTHETICS CENTER SRL",
+        "county": "Brașov",
+        "city": "Brașov",
+        "address": "Jud. Brașov, Mun. Brașov, Str. Aluminiului, Nr.11, Constructia C2 Identificata La A.1.2. Sub Nr Cad 121820-C2",
+        "phone": "+40722692307",
+        "administrator": "Peride Maria Florentina, Badilas Ionut Daniel",
+        "subdomain": "evident-aesthetics-center",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100284.6610286859!2d25.51406240406702!3d45.65256847836167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b862aa214f1%3A0x6cf5f2ef54391e0f!2zQnJhyJlvdg!5e1!3m2!1sen!2sro!4v1771593370437!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SIRO DENT ELITE SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 3",
+        "address": "Municipiul București, Sector 3, Bld Corneliu Coposu, Nr.39a, Parter. Camera 1, Sc.1, Ap.3",
+        "phone": "+40799969595",
+        "administrator": "",
+        "subdomain": "siro-dent-elite",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51235.758530955434!2d26.119332819500585!3d44.418198000958355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1febb27ed5e39%3A0x6636dc1113205e10!2sSector%203%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593955894!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "DENT TARGET MVT SRL",
+        "county": "Călărași",
+        "city": "Călărași",
+        "address": "Jud. Călărași, Mun. Călărași, Str. Viitor, Nr.185, Cam 1",
+        "phone": "+40721835926",
+        "administrator": "Ion Irina Madalina",
+        "subdomain": "dent-target",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102837.7811266279!2d27.24209943668784!3d44.20881283489335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b022bcd70432fb%3A0x214283a3c0ceb78d!2zQ8SDbMSDcmHImWk!5e1!3m2!1sen!2sro!4v1771593449584!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "NEWRAY EUDENT SRL",
+        "county": "Sibiu",
+        "city": "Sibiu",
+        "address": "Jud. Sibiu, Mun. Sibiu, Cal. Turnișorului, Nr.47",
+        "phone": "+40755159149",
+        "administrator": "",
+        "subdomain": "newray-eudent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100050.69048198833!2d24.057437810339888!3d45.78308720177815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c6788fd2c1cd5%3A0x3ade9d214e3390b4!2sSibiu!5e1!3m2!1sen!2sro!4v1771594021316!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "PRIMESMILE SRL",
+        "county": "Dolj",
+        "city": "Craiova",
+        "address": "Jud. Dolj, Mun. Craiova, Str. Înfrățirii, Nr.2, Bl.10d, Sc.1, Ap.21",
+        "phone": "+40740240929",
+        "administrator": "",
+        "subdomain": "primesmile",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102637.76439633996!2d23.724264391055666!3d44.32325514462831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d70e6d6dcd07%3A0x4650f2eadbde99f9!2sCraiova!5e1!3m2!1sen!2sro!4v1771593524807!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "SIMPLYARTDENT SRL",
+        "county": "Bihor",
+        "city": "Săldăbagiu de Munte, Paleu",
+        "address": "Jud. Bihor, Sat Săldăbagiu de Munte Com. Paleu, Str. Livezilor, Nr.9",
+        "phone": "+40751096678",
+        "administrator": "",
+        "subdomain": "simplyartdent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24419.227196762917!2d21.95726024417007!3d47.09139490339172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4746482c0effda0f%3A0xabdc92c85a278615!2zU8SDbGTEg2JhZ2l1IGRlIE11bnRl!5e1!3m2!1sen!2sro!4v1771593855657!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "CGM DENT SRL",
+        "county": "Gorj",
+        "city": "Capu Dealului, Brănești",
+        "address": "Jud. Gorj, Sat Capu Dealului Com. Brănești, Str. Mioritei, Nr.3",
+        "phone": "+40787535242",
+        "administrator": "",
+        "subdomain": "cgm-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25525.72811744477!2d23.452226985464062!3d44.628135748614426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752f35f29366cfd%3A0x11daf75a91a6482b!2sCapu%20Dealului!5e1!3m2!1sen!2sro!4v1771593462594!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "MIRA DENTAL CARE SRL",
+        "county": "Brăila",
+        "city": "Brăila",
+        "address": "Jud. Brăila, Mun. Brăila, Str. Smardan, Nr.9",
+        "phone": "+40749202911",
+        "administrator": "",
+        "subdomain": "mira-dental",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101019.49929876739!2d27.86423244507859!3d45.24073812468412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6d62ac5c69441%3A0x688e3ee9bf757c9e!2zQnLEg2lsYQ!5e1!3m2!1sen!2sro!4v1771593360849!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "32 SMILE CENTER SRL",
+        "county": "Argeș",
+        "city": "Băiculești",
+        "address": "Jud. Argeș, Sat Băiculești Com. Băiculești, Nr.181",
+        "phone": "+40745185186",
+        "administrator": "Marinescu George Victor",
+        "subdomain": "32-smile-center",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25330.319432631215!2d24.671044187001733!3d45.07075884846435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2cb2d08c3e013%3A0x1788957352e48c80!2zMTE3MDY1IELEg2ljdWxlyJl0aQ!5e1!3m2!1sen!2sro!4v1771593231146!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "PERIOEXPERT SRL",
+        "county": "Municipiul București",
+        "city": "Sectorul 4",
+        "address": "Municipiul București, Sector 4, Ale Terasei, Nr.10, Bl.r12b, Sc.2, Et.9, Ap.80",
+        "phone": "+40747059299",
+        "administrator": "Druta Alexandra Ioana",
+        "subdomain": "perioexpert",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51235.758530955434!2d26.119332819500585!3d44.418198000958355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe0d5b715d0b%3A0xfa8fc62cda461d44!2sSector%204%2C%20Bucharest!5e1!3m2!1sen!2sro!4v1771593963815!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "COLTAN DENT SRL",
+        "county": "Gorj",
+        "city": "Alimpești",
+        "address": "Jud. Gorj, Sat Alimpești Com. Alimpești, Str. Cimitirului, Nr.4",
+        "phone": "+40742858924",
+        "administrator": "Coltan Viorica Elena",
+        "subdomain": "coltan-dent",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25318.26686636984!2d23.77738573709657!3d45.09794739846955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474d7706bf78dbf9%3A0x7431f0427372e943!2sAlimpe%C8%99ti!5e1!3m2!1sen!2sro!4v1771593091442!5m2!1sen!2sro"
+    },
+    {
+        "clinic_name": "ODENT SOLUTIONS SRL",
+        "county": "Iași",
+        "city": "Valea Lupului",
+        "address": "Jud. Iași, Sat Valea Lupului Com. Valea Lupului, Str. Basmului, Nr.8, Parter, Bl.z7, Sc.c, Ap.1",
+        "phone": "+40758413098",
+        "administrator": "",
+        "subdomain": "odent-solutions",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24378.003480093084!2d27.489613305171005!3d47.18123877284743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cae4bda8eed787%3A0x2e32c64757ba0570!2sValea%20Lupului!5e1!3m2!1sen!2sro!4v1771594163994!5m2!1sen!2sro"
+    }
+]
