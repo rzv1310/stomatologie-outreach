@@ -21,7 +21,7 @@
 
     .header {
       max-width: 920px;
-      margin: 0 auto 2.5rem;
+      margin: 0 auto 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -48,6 +48,62 @@
     .stats span {
       color: #c4b5fd;
       font-weight: 600;
+    }
+
+    .toolbar {
+      max-width: 920px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.625rem 1rem;
+      font-family: inherit;
+      font-size: 0.875rem;
+      background: #18181b;
+      border: 1px solid #27272a;
+      border-radius: 10px;
+      color: #e4e4e7;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .search-input::placeholder {
+      color: #52525b;
+    }
+
+    .search-input:focus {
+      border-color: #4f46e5;
+    }
+
+    .btn-toggle-done {
+      font-family: inherit;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      padding: 0.625rem 1rem;
+      background: #1e1e28;
+      color: #71717a;
+      border: 1px solid #2a2a35;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+
+    .btn-toggle-done:hover {
+      background: #27272f;
+      color: #a1a1aa;
+    }
+
+    .btn-toggle-done.active {
+      background: #14532d;
+      color: #86efac;
+      border-color: #16a34a33;
     }
 
     .container {
@@ -78,6 +134,10 @@
 
     .clinic.done:hover {
       opacity: 0.5;
+    }
+
+    .clinic.filtered-out {
+      display: none;
     }
 
     .clinic-top {
@@ -203,6 +263,13 @@
       box-shadow: 0 0 16px #15803d44;
     }
 
+    .no-results {
+      text-align: center;
+      color: #52525b;
+      padding: 3rem 0;
+      font-size: 0.875rem;
+    }
+
     @media (max-width: 600px) {
       body { padding: 1.25rem 0.75rem; }
       .clinic { padding: 1.125rem 1.25rem; }
@@ -217,11 +284,16 @@
       <span id="done-count">0</span> / <span id="total-count">0</span> done
     </div>
   </div>
+  <div class="toolbar">
+    <input type="text" class="search-input" id="search" placeholder="Search by city or clinic name..." autocomplete="off" />
+    <button class="btn-toggle-done" id="toggle-done" onclick="toggleHideDone()">Hide done</button>
+  </div>
   <div class="container" id="container"></div>
 
   <script>
     const DOMAIN_SUFFIX = 'seo-doctor.ro';
     const DONE_KEY = 'clinics-done';
+    let hideDone = false;
 
     function loadDone() {
       try { return JSON.parse(localStorage.getItem(DONE_KEY) || '{}'); } catch { return {}; }
@@ -236,6 +308,36 @@
       const count = Object.values(done).filter(Boolean).length;
       document.getElementById('done-count').textContent = count;
       document.getElementById('total-count').textContent = total;
+    }
+
+    function removeDiacritics(str) {
+      return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ț/g, 't').replace(/Ț/g, 'T').replace(/ș/g, 's').replace(/Ș/g, 'S');
+    }
+
+    function applyFilters() {
+      const query = removeDiacritics(document.getElementById('search').value.toLowerCase().trim());
+      const done = loadDone();
+      const cards = document.querySelectorAll('.clinic');
+
+      cards.forEach(card => {
+        const name = removeDiacritics((card.dataset.name || '').toLowerCase());
+        const city = removeDiacritics((card.dataset.city || '').toLowerCase());
+        const subdomain = card.id.replace('clinic-', '');
+        const isDone = !!done[subdomain];
+
+        const matchesSearch = !query || name.includes(query) || city.includes(query);
+        const matchesDone = !hideDone || !isDone;
+
+        card.classList.toggle('filtered-out', !(matchesSearch && matchesDone));
+      });
+    }
+
+    function toggleHideDone() {
+      hideDone = !hideDone;
+      const btn = document.getElementById('toggle-done');
+      btn.classList.toggle('active', hideDone);
+      btn.textContent = hideDone ? 'Show done' : 'Hide done';
+      applyFilters();
     }
 
     function toggleDone(subdomain, total) {
@@ -255,6 +357,7 @@
         btn.classList.remove('active');
         btn.innerHTML = '&#9675; Mark done';
       }
+      applyFilters();
     }
 
     function copyText(subdomain, text, total) {
@@ -288,28 +391,50 @@
 
     function buildScript(clinic) {
       const link = 'https://' + clinic.subdomain + '.' + DOMAIN_SUFFIX;
-      return `Bună ziua,
+      return `Bună ziua!
 
-Vă contactăm în legătură cu un website dedicat cabinetului dumneavoastră stomatologic.
+🦷 Felicitări pentru deschiderea noului cabinet!
 
-Puteți vizualiza website-ul aici: ${link}
+Știu că începutul de drum e dificil, așa că m-am gândit să vă iau o grijă de pe umeri:
 
-Toate serviciile vor fi personalizate și prezentate pe pagini dedicate cabinetului dumneavoastră.
+ᴀᴍ ᴄᴏɴsᴛʀᴜɪᴛ ᴅᴇᴊᴀ ᴜɴ sɪᴛᴇ ᴘᴇɴᴛʀᴜ ᴅᴠs.
 
-Așteptăm cu interes răspunsul dumneavoastră.`;
+În loc să așteptați luni de zile după un programator, aveți aici un site gata de lansare, creat special pentru a transforma vizitatorii în pacienți:
+
+🔗 ${link}
+
+
+De ce l-am făcut deja?
+
+Pentru că aveți nevoie de vizibilitate în Google încă din prima zi!
+Site-ul este ultra-rapid pe mobil și include și un sistem de programări online (esențial pentru pacienții tineri).
+
+Dacă vă place, îi adăugăm logo, pozele și serviciile dvs.
+👉 și îl lansăm oficial în 48 de ore.`;
     }
 
     function buildScriptHTML(clinic) {
       const link = 'https://' + clinic.subdomain + '.' + DOMAIN_SUFFIX;
-      return `Bună ziua,
+      return `Bună ziua!
 
-Vă contactăm în legătură cu un website dedicat cabinetului dumneavoastră stomatologic.
+🦷 Felicitări pentru deschiderea noului cabinet!
 
-Puteți vizualiza website-ul aici: <span class="script-link">${link}</span>
+Știu că începutul de drum e dificil, așa că m-am gândit să vă iau o grijă de pe umeri:
 
-Toate serviciile vor fi personalizate și prezentate pe pagini dedicate cabinetului dumneavoastră.
+ᴀᴍ ᴄᴏɴsᴛʀᴜɪᴛ ᴅᴇᴊᴀ ᴜɴ sɪᴛᴇ ᴘᴇɴᴛʀᴜ ᴅᴠs.
 
-Așteptăm cu interes răspunsul dumneavoastră.`;
+În loc să așteptați luni de zile după un programator, aveți aici un site gata de lansare, creat special pentru a transforma vizitatorii în pacienți:
+
+🔗 <span class="script-link">${link}</span>
+
+
+De ce l-am făcut deja?
+
+Pentru că aveți nevoie de vizibilitate în Google încă din prima zi!
+Site-ul este ultra-rapid pe mobil și include și un sistem de programări online (esențial pentru pacienții tineri).
+
+Dacă vă place, îi adăugăm logo, pozele și serviciile dvs.
+👉 și îl lansăm oficial în 48 de ore.`;
     }
 
     async function init() {
@@ -321,7 +446,6 @@ Așteptăm cu interes răspunsul dumneavoastră.`;
       clinics.forEach((clinic) => {
         const subdomain = clinic.subdomain;
         const link = 'https://' + subdomain + '.' + DOMAIN_SUFFIX;
-        const script = buildScript(clinic);
         const scriptHTML = buildScriptHTML(clinic);
         const isDone = !!done[subdomain];
         const phoneDisplay = formatPhone(clinic.phone);
@@ -329,13 +453,15 @@ Așteptăm cu interes răspunsul dumneavoastră.`;
         const div = document.createElement('div');
         div.className = 'clinic' + (isDone ? ' done' : '');
         div.id = 'clinic-' + subdomain;
+        div.dataset.name = clinic.clinic_name;
+        div.dataset.city = clinic.city;
 
         div.innerHTML = `
           <div class="clinic-top">
             <div class="clinic-name">${clinic.clinic_name}</div>
           </div>
           <div class="clinic-meta">
-            <span>${clinic.city}, ${clinic.county}</span>
+            <span>${clinic.city}</span>
             <span class="sep">&middot;</span>
             <a href="tel:${clinic.phone}">${phoneDisplay}</a>
             <span class="sep">&middot;</span>
@@ -355,6 +481,9 @@ Așteptăm cu interes răspunsul dumneavoastră.`;
       // Build a lookup map for onclick handlers
       window.clinicMap = {};
       clinics.forEach(c => { window.clinicMap[c.subdomain] = c; });
+
+      // Search listener
+      document.getElementById('search').addEventListener('input', applyFilters);
 
       updateStats(clinics.length);
     }
