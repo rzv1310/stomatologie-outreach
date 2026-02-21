@@ -1,43 +1,63 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Stethoscope, Smile, Sparkles, Scissors, Crown, Baby, ArrowRight, ChevronRight } from 'lucide-react';
+import implantologieBg from '@/assets/implantologie-bg.jpeg';
+import chirurgieBg from '@/assets/chirurgie-bg.jpeg';
+import ortodontieBg from '@/assets/ortodontie-bg.png';
+import copiiBg from '@/assets/copii-bg.jpeg';
+import proteticaBg from '@/assets/protetica-bg.png';
+import albireBg from '@/assets/albire-bg.jpeg';
+
 const services = [{
   icon: Stethoscope,
   title: 'Implantologie',
   description: 'Implanturi dentare de ultimă generație pentru un zâmbet perfect și durabil.',
-  features: ['Implant într-o zi', 'Ghidaj 3D', 'Garanție'],
-  color: 'from-emerald-500/20 to-teal-500/20'
+  features: [] as string[],
+  color: 'from-emerald-500/20 to-teal-500/20',
+  bgImage: implantologieBg,
+  hideDetails: true
 }, {
   icon: Smile,
   title: 'Ortodonție',
   description: 'Aparate dentare invizibile și clasice pentru alinierea perfectă a dinților.',
-  features: ['Invisalign', 'Aparate ceramice', 'Tratament rapid'],
-  color: 'from-cyan-500/20 to-blue-500/20'
+  features: [] as string[],
+  color: 'from-cyan-500/20 to-blue-500/20',
+  bgImage: ortodontieBg,
+  hideDetails: true
 }, {
   icon: Sparkles,
   title: 'Albire Dentară',
   description: 'Tratamente profesionale de albire pentru un zâmbet strălucitor.',
-  features: ['Albire laser', 'Kit acasă', 'Rezultat instant'],
-  color: 'from-amber-500/20 to-yellow-500/20'
+  features: [] as string[],
+  color: 'from-amber-500/20 to-yellow-500/20',
+  bgImage: albireBg,
+  hideDetails: true
 }, {
   icon: Scissors,
   title: 'Chirurgie Orală',
   description: 'Intervenții chirurgicale minim invazive cu recuperare rapidă.',
-  features: ['Extractii complexe', 'Grefe osoase', 'Sedare conștientă'],
-  color: 'from-rose-500/20 to-pink-500/20'
+  features: [] as string[],
+  color: 'from-rose-500/20 to-pink-500/20',
+  bgImage: chirurgieBg,
+  hideDetails: true
 }, {
   icon: Crown,
   title: 'Protetică',
   description: 'Coroane, fațete și proteze de înaltă calitate pentru funcționalitate perfectă.',
-  features: ['Zirconiu', 'E-max', 'Design digital'],
-  color: 'from-purple-500/20 to-violet-500/20'
+  features: [] as string[],
+  color: 'from-purple-500/20 to-violet-500/20',
+  bgImage: proteticaBg,
+  hideDetails: true
 }, {
   icon: Baby,
   title: 'Stomatologie Copii',
   description: 'Îngrijire dentară adaptată pentru cei mici, într-un mediu prietenos.',
-  features: ['Fără durere', 'Jocuri interactive', 'Diplomă de curaj'],
-  color: 'from-green-500/20 to-lime-500/20'
+  features: [] as string[],
+  color: 'from-green-500/20 to-lime-500/20',
+  bgImage: copiiBg,
+  hideDetails: true
 }];
+
 const ServiceCard = ({
   service,
   index
@@ -45,18 +65,6 @@ const ServiceCard = ({
   service: typeof services[0];
   index: number;
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [mousePos, setMousePos] = useState({
-    x: 0,
-    y: 0
-  });
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setMousePos({
-      x: e.clientX - rect.left - rect.width / 2,
-      y: e.clientY - rect.top - rect.height / 2
-    });
-  };
   return <motion.div initial={{
     opacity: 0,
     y: 50
@@ -69,91 +77,59 @@ const ServiceCard = ({
   }} viewport={{
     once: true,
     margin: "-50px"
-  }} className="group relative" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} onMouseMove={handleMouseMove}>
-      <motion.div className="relative h-full p-8 rounded-3xl glass overflow-hidden cursor-pointer" style={{
-      transform: isHovered ? `perspective(1000px) rotateX(${mousePos.y * -0.02}deg) rotateY(${mousePos.x * 0.02}deg)` : 'perspective(1000px) rotateX(0deg) rotateY(0deg)'
-    }} whileHover={{
-      scale: 1.02
-    }} transition={{
-      type: "spring",
-      stiffness: 300,
-      damping: 20
-    }}>
-        {/* Background Gradient */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
-        
-        {/* Glow Border */}
-        <motion.div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{
-        background: 'linear-gradient(135deg, hsl(var(--accent)) 0%, transparent 50%, hsl(var(--primary)) 100%)',
-        padding: '1px',
-        mask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-        maskComposite: 'xor',
-        WebkitMaskComposite: 'xor'
-      }} />
+  }} className="relative">
+      <div className={`relative h-full p-8 rounded-3xl glass overflow-hidden ${service.bgImage ? 'flex flex-col justify-end min-h-[480px]' : ''}`}>
+        {/* Background Image */}
+        {service.bgImage && (
+          <div className="absolute inset-0 z-0">
+            <motion.img src={service.bgImage} alt="" className="w-full h-full object-cover" initial={{ scale: 1 }} whileInView={{ scale: 1.16 }} transition={{ duration: 1.5, ease: "easeOut" }} viewport={{ once: true }} />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-black/10" />
+          </div>
+        )}
 
         {/* Content */}
-        <div className="relative z-10">
+        <div className={`relative z-10 ${service.bgImage ? 'backdrop-blur-md bg-background/50 rounded-2xl px-3 pt-3 pb-3 mt-auto' : ''}`}>
           {/* Icon */}
-          <motion.div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6 group-hover:bg-accent/30 transition-colors" animate={isHovered ? {
-          rotate: [0, -10, 10, 0]
-        } : {}} transition={{
-          duration: 0.5
-        }}>
-            <service.icon className="w-8 h-8 text-accent" />
-          </motion.div>
+          {!service.bgImage && (
+            <div className="w-16 h-16 rounded-2xl bg-accent/20 flex items-center justify-center mb-6">
+              <service.icon className="w-8 h-8 text-accent" />
+            </div>
+          )}
 
           {/* Title */}
-          <h3 className="font-display text-xl font-bold mb-3 text-foreground group-hover:gradient-text transition-all duration-300">
+          <h3 className={`font-display text-xl font-bold text-foreground ${service.bgImage ? 'mb-1' : 'mb-3'}`}>
             {service.title}
           </h3>
 
           {/* Description */}
-          <p className="text-muted-foreground mb-6 leading-relaxed">
+          <p className={`leading-relaxed ${service.bgImage ? 'mb-0 text-sm text-foreground font-medium' : 'mb-6 text-muted-foreground'}`}>
             {service.description}
           </p>
 
           {/* Features */}
-          <div className="space-y-2 mb-6">
-            {service.features.map((feature, i) => <motion.div key={i} className="flex items-center gap-2 text-sm" initial={{
-            opacity: 0,
-            x: -10
-          }} animate={isHovered ? {
-            opacity: 1,
-            x: 0
-          } : {
-            opacity: 0.7,
-            x: 0
-          }} transition={{
-            delay: i * 0.1
-          }}>
-                <ChevronRight className="w-4 h-4 text-accent" />
-                <span className="text-foreground/80">{feature}</span>
-              </motion.div>)}
-          </div>
+          {service.features.length > 0 && (
+            <div className="space-y-2 mb-6">
+              {service.features.map((feature, i) => (
+                <div key={i} className="flex items-center gap-2 text-sm">
+                  <ChevronRight className="w-4 h-4 text-accent" />
+                  <span className="text-foreground/80">{feature}</span>
+                </div>
+              ))}
+            </div>
+          )}
 
           {/* CTA */}
-          <motion.div className="flex items-center gap-2 text-accent font-medium" animate={isHovered ? {
-          x: 5
-        } : {
-          x: 0
-        }}>
-            <span>Detalii</span>
-            <ArrowRight className="w-4 h-4" />
-          </motion.div>
+          {!service.hideDetails && (
+            <div className="flex items-center gap-2 text-accent font-medium">
+              <span>Detalii</span>
+              <ArrowRight className="w-4 h-4" />
+            </div>
+          )}
         </div>
-
-        {/* Shimmer Effect */}
-        <motion.div className="absolute inset-0 opacity-0 group-hover:opacity-100" initial={false} animate={isHovered ? {
-        background: ['linear-gradient(90deg, transparent 0%, hsl(var(--accent) / 0.1) 50%, transparent 100%)'],
-        x: ['-100%', '100%']
-      } : {}} transition={{
-        duration: 1,
-        repeat: Infinity,
-        repeatDelay: 0.5
-      }} />
-      </motion.div>
+      </div>
     </motion.div>;
 };
+
 export const ServicesSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -162,9 +138,9 @@ export const ServicesSection = () => {
   });
   return <section id="services" className="relative py-16 sm:py-24 md:py-32 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/15 to-transparent" />
       <div className="absolute inset-0 grid-pattern" />
-      
+
       {/* Floating Orbs */}
       <motion.div className="absolute top-40 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" animate={{
       scale: [1, 1.2, 1],
@@ -221,9 +197,13 @@ export const ServicesSection = () => {
       }} transition={{
         delay: 0.5
       }} className="text-center mt-16">
-          <div className="px-8 py-4 rounded-2xl glass border border-accent/30 text-center max-w-xl mx-auto">
-            <span className="font-semibold text-foreground">Toate serviciile vor fi personalizate și prezentate pe pagini dedicate cabinetului dumneavoastră.</span>
-          </div>
+          <motion.div
+            className="px-8 py-4 rounded-2xl glass border border-accent/30 text-center max-w-xl mx-auto"
+            animate={{ scale: [1, 1.03, 1] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <span className="font-semibold text-foreground">Serviciile vor fi personalizate pt dvs., iar fiecare serviciu va avea o pagina dedicata</span>
+          </motion.div>
         </motion.div>
       </div>
     </section>;

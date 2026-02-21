@@ -32,13 +32,11 @@ export const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'py-3' : 'py-6'
+          isScrolled ? 'py-3' : 'py-3'
         }`}
       >
         <div className="container mx-auto px-4">
-          <div className={`flex items-center justify-between rounded-2xl transition-all duration-300 ${
-            isScrolled ? 'glass px-6 py-3' : 'px-2'
-          }`}>
+          <div className={`flex items-center justify-between rounded-2xl transition-all duration-300 backdrop-blur-md bg-background/50 px-6 py-3`}>
             {/* Brand Name */}
             <motion.a 
               href="#"

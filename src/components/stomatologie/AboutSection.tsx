@@ -1,13 +1,41 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { Cpu, ShieldCheck, HeartPulse } from 'lucide-react';
 import clinicPhoto from '@/assets/clinic-photo.jpg';
+import DisplayCards from '@/components/ui/display-cards';
 import { useClinic } from '@/context/ClinicContext';
 
-const features = [
-  'Echipamente de ultimă generație',
-  'Sterilizare la cele mai înalte standarde',
-  'Radiografie digitală 3D',
-  'Tratamente minim invazive',
+const featureCards = [
+  {
+    icon: <Cpu className="size-4 text-primary" />,
+    title: 'Echipamente',
+    description: 'Aparatură de ultimă generație',
+    date: 'Tehnologie modernă',
+    iconClassName: 'text-primary',
+    titleClassName: 'text-primary',
+    className:
+      "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+  },
+  {
+    icon: <ShieldCheck className="size-4 text-primary" />,
+    title: 'Sterilizare',
+    description: 'Standarde înalte de sterilizare',
+    date: 'Siguranță maximă',
+    iconClassName: 'text-primary',
+    titleClassName: 'text-primary',
+    className:
+      "[grid-area:stack] translate-x-12 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+  },
+  {
+    icon: <HeartPulse className="size-4 text-primary" />,
+    title: 'Tratamente',
+    description: 'Tratamente minim invazive',
+    date: 'Confort pacient',
+    iconClassName: 'text-primary',
+    titleClassName: 'text-primary',
+    className:
+      "[grid-area:stack] translate-x-24 translate-y-20 hover:translate-y-10",
+  },
 ];
 
 
@@ -29,23 +57,23 @@ export const AboutSection = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, y: 40 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
       transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     },
   };
 
   return (
-    <section id="about" className="relative py-16 sm:py-24 md:py-32 overflow-hidden">
+    <section id="about" className="relative py-16 sm:py-24 md:py-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="absolute inset-0 grid-pattern opacity-50" />
-      
+
       {/* Floating Elements */}
       <motion.div
         className="absolute top-20 right-10 w-64 h-64 rounded-full bg-accent/5 blur-3xl"
-        animate={{ 
+        animate={{
           scale: [1, 1.2, 1],
           rotate: [0, 90, 0],
         }}
@@ -61,7 +89,7 @@ export const AboutSection = () => {
         >
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-20">
-            <motion.span 
+            <motion.span
               className="inline-block px-4 py-2 rounded-full glass text-sm font-medium text-accent mb-4"
               whileHover={{ scale: 1.05 }}
             >
@@ -72,35 +100,34 @@ export const AboutSection = () => {
               <span className="gradient-text">Stomatologie</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              De peste 15 ani, suntem lideri în furnizarea de servicii stomatologice 
-              de înaltă calitate în {clinic.city}. Combinăm tehnologia avansată cu
-              experiența medicală pentru rezultate excepționale.
+               De peste 7 ani, suntem dedicați în furnizarea de servicii stomatologice
+               de înaltă calitate în {clinic.city}.
             </p>
           </motion.div>
 
           {/* Main Content Grid */}
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mb-16 md:mb-24">
             {/* Left - Image/Visual */}
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="relative"
             >
               <div className="relative aspect-square max-w-md mx-auto">
                 {/* Clinic Photo */}
-                <motion.div 
+                <motion.div
                   className="absolute inset-8 rounded-3xl overflow-hidden"
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <img 
-                    src={clinicPhoto} 
-                    alt="Cabinet stomatologic modern" 
+                  <img
+                    src={clinicPhoto}
+                    alt="Cabinet stomatologic modern"
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
 
                 {/* Floating Badge */}
-                <motion.div 
+                <motion.div
                   className="absolute -top-4 -right-4 glass px-4 py-2 rounded-full"
                   animate={{ y: [0, -10, 0] }}
                   transition={{ duration: 3, repeat: Infinity }}
@@ -116,34 +143,14 @@ export const AboutSection = () => {
                 <h3 className="font-display text-2xl font-bold mb-4 text-foreground">
                   De ce să ne alegi ?
                 </h3>
-                <p className="text-muted-foreground leading-relaxed mb-6">
-                  Pentru noi - fiecare pacient este unic. Oferim tratamente personalizate, 
+                <p className="text-muted-foreground leading-relaxed mb-12">
+                  Pentru noi - fiecare pacient este unic. Oferim tratamente personalizate,
                   într-un mediu confortabil și sigur.
                 </p>
               </div>
 
-              {/* Features List */}
-              <div className="space-y-4">
-                {features.map((feature, i) => (
-                  <motion.div
-                    key={i}
-                    className="flex items-center gap-4 p-4 bg-primary rounded-xl group hover:bg-primary/90 transition-colors"
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ delay: 0.5 + i * 0.1 }}
-                    whileHover={{ x: 10 }}
-                  >
-                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-white/30 transition-colors">
-                      <motion.div
-                        className="w-3 h-3 rounded-full bg-white"
-                        animate={{ scale: [1, 1.2, 1] }}
-                        transition={{ duration: 2, repeat: Infinity, delay: i * 0.2 }}
-                      />
-                    </div>
-                    <span className="font-medium text-white">{feature}</span>
-                  </motion.div>
-                ))}
-              </div>
+              {/* Features Display Cards */}
+              <DisplayCards cards={featureCards} />
             </motion.div>
           </div>
         </motion.div>

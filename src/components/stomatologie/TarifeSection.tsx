@@ -7,9 +7,9 @@ const tarife = [
     categorie: 'Implantologie',
     color: 'from-emerald-500/20 to-teal-500/20',
     servicii: [
-      { nume: 'Implant dentar (inclusiv bont)', pret: 'de la 1.500 €' },
-      { nume: 'Implant All-on-4 (arcadă completă)', pret: 'de la 6.000 €' },
-      { nume: 'Grefă osoasă', pret: 'de la 300 €' },
+      { nume: 'Implant dentar (inclusiv bont)', pret: 'de la 750 €' },
+      { nume: 'Implant All-on-4 (arcadă completă)', pret: 'de la 3.000 €' },
+      { nume: 'Grefă osoasă', pret: 'de la 200 €' },
     ],
   },
   {
@@ -81,9 +81,13 @@ export const TarifeSection = () => {
             <span className="text-foreground">Prețuri </span>
             <span className="gradient-text">Transparente</span>
           </h2>
-          <p className="text-base sm:text-lg text-foreground max-w-3xl mx-auto">
+          <motion.p
+            className="text-base sm:text-lg text-foreground max-w-3xl mx-auto"
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          >
             Toate tarifele vor fi personalizate pentru dvs. si vom crea o pagină dedicată pentru prețuri
-          </p>
+          </motion.p>
         </motion.div>
 
         {/* Grid of categories */}
@@ -98,7 +102,7 @@ export const TarifeSection = () => {
               className="group relative rounded-3xl glass overflow-hidden"
             >
               {/* Gradient bg on hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
+              <div className={`absolute inset-0 bg-gradient-to-br ${cat.color} opacity-100`} />
 
               <div className="relative z-10 p-4 sm:p-6 md:p-8">
                 <h3 className="font-display text-lg font-bold text-foreground mb-5 flex items-center gap-2">
@@ -117,7 +121,7 @@ export const TarifeSection = () => {
                       className="flex items-center justify-between py-3 gap-4"
                     >
                       <span className="text-sm text-muted-foreground">{s.nume}</span>
-                      <span className="text-sm font-semibold text-accent whitespace-nowrap">{s.pret}</span>
+                      <span className="text-sm font-semibold text-foreground whitespace-nowrap">{s.pret}</span>
                     </motion.div>
                   ))}
                 </div>

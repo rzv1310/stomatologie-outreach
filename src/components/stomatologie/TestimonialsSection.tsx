@@ -121,7 +121,7 @@ export const TestimonialsSection = () => {
         </motion.div>
 
         {/* Main Testimonial Carousel */}
-        <div className="max-w-4xl mx-auto px-2 sm:px-4">
+        <div className="max-w-4xl mx-auto px-10 sm:px-4">
           <div className="relative min-h-[420px] sm:min-h-[380px] flex items-center justify-center">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
@@ -134,7 +134,7 @@ export const TestimonialsSection = () => {
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute w-full"
               >
-                <div className="relative px-8 py-5 sm:p-8 md:p-12 rounded-3xl bg-primary mt-6">
+                <div className="relative p-5 sm:p-8 md:p-12 rounded-3xl bg-primary mt-6">
                   {/* Quote Icon */}
                   <motion.div
                     className="absolute -top-6 left-8 w-12 h-12 rounded-full bg-muted border border-primary flex items-center justify-center"
@@ -181,45 +181,27 @@ export const TestimonialsSection = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* Navigation Buttons — hidden on mobile, shown on sm+ */}
+            {/* Navigation Buttons */}
             <motion.button
-              className="hidden sm:flex absolute left-0 sm:-translate-x-full md:-translate-x-1/2 p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10"
+              className="absolute left-2 sm:left-0 sm:-translate-x-full md:-translate-x-1/2 p-2 sm:p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10"
               onClick={() => paginate(-1)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <ChevronLeft className="w-6 h-6 text-foreground" />
+              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />
             </motion.button>
             <motion.button
-              className="hidden sm:flex absolute right-0 sm:translate-x-full md:translate-x-1/2 p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10"
+              className="absolute right-2 sm:right-0 sm:translate-x-full md:translate-x-1/2 p-2 sm:p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10"
               onClick={() => paginate(1)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              <ChevronRight className="w-6 h-6 text-foreground" />
-            </motion.button>
-          </div>
-
-          {/* Mobile Navigation — below card, visible only on mobile */}
-          <div className="flex sm:hidden justify-center gap-6 mt-4">
-            <motion.button
-              className="p-3 rounded-full glass hover:bg-accent/20 transition-colors"
-              onClick={() => paginate(-1)}
-              whileTap={{ scale: 0.9 }}
-            >
-              <ChevronLeft className="w-5 h-5 text-foreground" />
-            </motion.button>
-            <motion.button
-              className="p-3 rounded-full glass hover:bg-accent/20 transition-colors"
-              onClick={() => paginate(1)}
-              whileTap={{ scale: 0.9 }}
-            >
-              <ChevronRight className="w-5 h-5 text-foreground" />
+              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />
             </motion.button>
           </div>
 
           {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-6 sm:mt-8">
+          <div className="flex justify-center gap-2 mt-8">
             {testimonials.map((_, i) => (
               <motion.button
                 key={i}
