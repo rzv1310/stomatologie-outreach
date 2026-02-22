@@ -126,8 +126,7 @@ export const ContactSection = () => {
             <span className="gradient-text">Vorbim</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Programează-te pentru o consultație sau contactează-ne pentru orice întrebare. 
-            Echipa noastră îți stă la dispoziție.
+            Programează-te pentru o consultație sau sună-ne pentru orice întrebare.
           </p>
         </motion.div>
 
@@ -316,13 +315,14 @@ export const ContactSection = () => {
             >
               <iframe
                 src={clinic.mapEmbedUrl}
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-2xl"
+                title={`Hartă Google Maps - ${clinic.city}`}
               />
             </motion.div>
           </motion.div>
@@ -353,9 +353,9 @@ const AnimatedSubmitSuccess = ({ isVisible }: { isVisible: boolean }) => {
         >
           <CheckCircle className="w-10 h-10 text-accent" />
         </motion.div>
-        <h4 className="font-display text-xl font-bold text-foreground mb-2">
+        <p className="font-display text-xl font-bold text-foreground mb-2">
           Mesaj trimis!
-        </h4>
+        </p>
         <p className="text-muted-foreground">
           Te vom contacta în cel mai scurt timp.
         </p>

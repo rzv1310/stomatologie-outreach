@@ -12,7 +12,7 @@ const services = [{
   icon: Stethoscope,
   title: 'Implantologie',
   description: 'Implanturi dentare de ultimă generație pentru un zâmbet perfect și durabil.',
-  features: [] as string[],
+  features: [],
   color: 'from-emerald-500/20 to-teal-500/20',
   bgImage: implantologieBg,
   hideDetails: true
@@ -20,7 +20,7 @@ const services = [{
   icon: Smile,
   title: 'Ortodonție',
   description: 'Aparate dentare invizibile și clasice pentru alinierea perfectă a dinților.',
-  features: [] as string[],
+  features: [],
   color: 'from-cyan-500/20 to-blue-500/20',
   bgImage: ortodontieBg,
   hideDetails: true
@@ -28,7 +28,7 @@ const services = [{
   icon: Sparkles,
   title: 'Albire Dentară',
   description: 'Tratamente profesionale de albire pentru un zâmbet strălucitor.',
-  features: [] as string[],
+  features: [],
   color: 'from-amber-500/20 to-yellow-500/20',
   bgImage: albireBg,
   hideDetails: true
@@ -36,7 +36,7 @@ const services = [{
   icon: Scissors,
   title: 'Chirurgie Orală',
   description: 'Intervenții chirurgicale minim invazive cu recuperare rapidă.',
-  features: [] as string[],
+  features: [],
   color: 'from-rose-500/20 to-pink-500/20',
   bgImage: chirurgieBg,
   hideDetails: true
@@ -44,7 +44,7 @@ const services = [{
   icon: Crown,
   title: 'Protetică',
   description: 'Coroane, fațete și proteze de înaltă calitate pentru funcționalitate perfectă.',
-  features: [] as string[],
+  features: [],
   color: 'from-purple-500/20 to-violet-500/20',
   bgImage: proteticaBg,
   hideDetails: true
@@ -52,7 +52,7 @@ const services = [{
   icon: Baby,
   title: 'Stomatologie Copii',
   description: 'Îngrijire dentară adaptată pentru cei mici, într-un mediu prietenos.',
-  features: [] as string[],
+  features: [],
   color: 'from-green-500/20 to-lime-500/20',
   bgImage: copiiBg,
   hideDetails: true

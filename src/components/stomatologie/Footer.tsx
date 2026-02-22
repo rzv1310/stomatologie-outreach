@@ -189,11 +189,13 @@ export const Footer = () => {
             <p className="text-sm text-white/80">
               © {currentYear} Stomatologie {clinic.city}. Toate drepturile rezervate.
             </p>
-            <p className="text-sm text-white/80 flex items-center gap-2">
-              Creat cu <Heart className="w-4 h-4 text-white fill-white" /> pentru zâmbetul tău
-              <span className="mx-2">|</span>
-              <a href={`tel:${clinic.phoneTel}`} className="hover:text-white transition-colors">{clinic.phoneFormatted}</a>
-            </p>
+            <div className="text-sm text-white/80 flex flex-col items-center gap-1 md:flex-row md:gap-2">
+              <span className="flex items-center gap-2">
+                Creat cu <Heart className="w-4 h-4 text-white fill-white" /> pentru zâmbetul tău
+              </span>
+              <span className="hidden md:inline mx-2">|</span>
+              <a href="tel:0742702982" className="hover:text-white transition-colors">0742 702 982</a>
+            </div>
           </div>
         </motion.div>
       </div>

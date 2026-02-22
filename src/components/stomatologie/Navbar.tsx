@@ -44,7 +44,7 @@ export const Navbar = () => {
               whileHover={{ scale: 1.02 }}
             >
               <div>
-                <h1 className="font-display text-xl font-bold gradient-text">Stomatologie</h1>
+                <span className="font-display text-xl font-bold gradient-text">Stomatologie</span>
                 <p className="text-xs text-muted-foreground -mt-1">{clinic.city}</p>
               </div>
             </motion.a>
@@ -88,6 +88,7 @@ export const Navbar = () => {
                 className="p-2 rounded-xl glass"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 whileTap={{ scale: 0.95 }}
+                aria-label={isMobileMenuOpen ? "Închide meniul" : "Deschide meniul"}
               >
                 {isMobileMenuOpen ? (
                   <X className="w-6 h-6 text-foreground" />
@@ -101,6 +102,7 @@ export const Navbar = () => {
                 href={`tel:${clinic.phoneTel}`}
                 className="p-2 rounded-xl bg-primary"
                 whileTap={{ scale: 0.95 }}
+                aria-label="Sună acum"
               >
                 <Phone className="w-6 h-6 text-white" />
               </motion.a>

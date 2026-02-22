@@ -1,51 +1,31 @@
 import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
-import { ParticleField } from './ParticleField';
 import { Button } from '@/components/ui/button';
 import { useClinic } from '@/context/ClinicContext';
-import heroBg from '@/assets/hero-bg.jpeg';
+import heroBg from '@/assets/hero-bg-desktop.png';
+import heroMobile from '@/assets/hero-mobile.jpeg';
 
 export const HeroSection = () => {
   const clinic = useClinic();
 
   return (
-    <section className="relative min-h-screen md:h-screen flex items-center md:items-end justify-center overflow-hidden bg-gradient-to-b from-amber-500/20 via-yellow-500/10 to-transparent md:bg-gradient-to-b md:from-background md:via-secondary/30 md:to-background pt-20 pb-10 md:pt-0 md:pb-0">
+    <section className="relative h-screen md:h-screen flex items-end justify-center overflow-hidden pb-6 md:pb-[15px] -mt-[80px] md:mt-0">
       {/* Background Image - Desktop Only */}
       <div
         className="absolute inset-0 hidden md:block bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
-      {/* Background Elements - Mobile Only */}
-      <div className="absolute inset-0 grid-pattern md:hidden" />
-      <div className="md:hidden">
-        <ParticleField />
-      </div>
-
-      {/* Floating Geometric Shapes - Mobile Only */}
-      <motion.div
-        className="absolute top-20 left-10 w-32 h-32 rounded-full bg-accent/10 blur-3xl z-[2] md:hidden"
-        animate={{
-          scale: [1, 1.2, 1],
-          x: [0, 30, 0],
-          y: [0, -20, 0],
-        }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-32 right-20 w-48 h-48 rounded-full bg-primary/10 blur-3xl z-[2] md:hidden"
-        animate={{
-          scale: [1, 1.3, 1],
-          x: [0, -40, 0],
-          y: [0, 30, 0],
-        }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
+      {/* Background Image - Mobile Only */}
+      <div
+        className="absolute inset-0 md:hidden bg-cover bg-center bg-no-repeat -top-[15px]"
+        style={{ backgroundImage: `url(${heroMobile})` }}
       />
 
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        {/* Glass card wrapper - desktop only */}
-        <div className="md:backdrop-blur-md md:bg-background/50 md:rounded-2xl md:px-6 md:py-8 md:max-w-3xl md:mx-auto">
+        {/* Glass card wrapper */}
+        <div className="backdrop-blur-md bg-background/50 rounded-2xl px-4 py-5 md:px-6 md:py-8 max-w-3xl mx-auto mt-[80px] md:mt-0">
           {/* Main Title */}
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
@@ -53,8 +33,7 @@ export const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-4"
           >
-            <span className="text-foreground">Stomatologie </span>
-            <span className="gradient-text glow-text">{clinic.city}</span>
+            <span className="text-primary">Stomatologie {clinic.city}</span>
           </motion.h1>
 
           {/* Subtitle */}

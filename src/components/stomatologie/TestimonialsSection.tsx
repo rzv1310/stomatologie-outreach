@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react';
-import { motion, useInView, AnimatePresence } from 'framer-motion';
+import { useRef, useState, useCallback } from 'react';
+import { motion, useInView, AnimatePresence, type PanInfo } from 'framer-motion';
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const testimonials = [
@@ -61,6 +61,15 @@ export const TestimonialsSection = () => {
     });
   };
 
+  const handleDragEnd = useCallback((_: any, info: PanInfo) => {
+    const swipeThreshold = 50;
+    if (info.offset.x < -swipeThreshold) {
+      paginate(1);
+    } else if (info.offset.x > swipeThreshold) {
+      paginate(-1);
+    }
+  }, []);
+
   const variants = {
     enter: (direction: number) => ({
       x: direction > 0 ? 300 : -300,
@@ -84,7 +93,7 @@ export const TestimonialsSection = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-background" />
       <div className="absolute inset-0 grid-pattern" />
-      
+
       {/* Decorative Elements */}
       <motion.div
         className="absolute top-20 left-1/4 w-64 h-64 rounded-full bg-primary/5 blur-3xl"
@@ -105,7 +114,7 @@ export const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-10 sm:mb-16"
         >
-          <motion.span 
+          <motion.span
             className="inline-block px-4 py-2 rounded-full glass text-sm font-medium text-accent mb-4"
             whileHover={{ scale: 1.05 }}
           >
@@ -132,7 +141,11 @@ export const TestimonialsSection = () => {
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute w-full"
+                className="absolute w-full cursor-grab active:cursor-grabbing"
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={0.3}
+                onDragEnd={handleDragEnd}
               >
                 <div className="relative p-5 sm:p-8 md:p-12 rounded-3xl bg-primary mt-6">
                   {/* Quote Icon */}
@@ -166,9 +179,9 @@ export const TestimonialsSection = () => {
 
                   {/* Author Info */}
                   <div className="flex flex-col items-center">
-                    <h4 className="font-display text-lg font-bold text-white">
+                    <p className="font-display text-lg font-bold text-white">
                       {testimonials[currentIndex].name}
-                    </h4>
+                    </p>
                     <p className="text-sm text-white/70 mb-2">{testimonials[currentIndex].role}</p>
                     <div className="flex items-center gap-3 text-sm text-white/60">
                       <span className="px-3 py-1 rounded-full bg-white/20">
@@ -183,20 +196,22 @@ export const TestimonialsSection = () => {
 
             {/* Navigation Buttons */}
             <motion.button
-              className="absolute left-2 sm:left-0 sm:-translate-x-full md:-translate-x-1/2 p-2 sm:p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10"
+              className="absolute left-0 -translate-x-full md:-translate-x-1/2 p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10 hidden sm:block"
               onClick={() => paginate(-1)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Recenzia anterioară"
             >
-              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />
+              <ChevronLeft className="w-6 h-6 text-foreground" />
             </motion.button>
             <motion.button
-              className="absolute right-2 sm:right-0 sm:translate-x-full md:translate-x-1/2 p-2 sm:p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10"
+              className="absolute right-0 translate-x-full md:translate-x-1/2 p-3 rounded-full glass hover:bg-accent/20 transition-colors z-10 hidden sm:block"
               onClick={() => paginate(1)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Recenzia următoare"
             >
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-foreground" />
+              <ChevronRight className="w-6 h-6 text-foreground" />
             </motion.button>
           </div>
 
@@ -206,13 +221,14 @@ export const TestimonialsSection = () => {
               <motion.button
                 key={i}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  i === currentIndex ? 'bg-accent w-8' : 'bg-muted hover:bg-muted-foreground/50'
+                  i === currentIndex ? 'bg-primary w-8' : 'bg-muted hover:bg-muted-foreground/50'
                 }`}
                 onClick={() => {
                   setDirection(i > currentIndex ? 1 : -1);
                   setCurrentIndex(i);
                 }}
                 whileHover={{ scale: 1.2 }}
+                aria-label={`Recenzia ${i + 1}`}
               />
             ))}
           </div>

@@ -1,9 +1,8 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Star, Award, GraduationCap, Linkedin, Mail } from 'lucide-react';
 import doctorPopescu from '@/assets/doctor-popescu.jpeg';
 import doctorIonescu from '@/assets/doctor-ionescu.png';
-
 const doctors = [{
   name: 'Dr. Alexandru Popescu',
   role: 'Medic Implantolog',
@@ -20,24 +19,7 @@ const doctors = [{
   education: 'UMF Iași',
   image: doctorIonescu,
   initials: 'Poza ta aici'
-}, {
-  name: 'Dr. Andrei Dumitrescu',
-  role: 'Specialist Endodonție',
-  experience: '5',
-  specializations: ['Endodonție', 'Microchirurgie', 'Tratamente laser'],
-  education: 'UMF Cluj-Napoca',
-  image: doctorPopescu,
-  initials: 'Poza ta aici'
-}, {
-  name: 'Dr. Elena Radu',
-  role: 'Specialist Pedodonție',
-  experience: '5',
-  specializations: ['Pedodonție', 'Profilaxie', 'Sedare conștientă'],
-  education: 'UMF Târgu Mureș',
-  image: doctorIonescu,
-  initials: 'Poza ta aici'
 }];
-
 const DoctorCard = ({
   doctor,
   index
@@ -132,10 +114,10 @@ const DoctorCard = ({
 
           {/* Social Links */}
           <div className="flex gap-3">
-            <button className="p-2 rounded-full bg-accent/10 transition-colors">
+            <button className="p-2 rounded-full bg-accent/10 transition-colors" aria-label="LinkedIn">
               <Linkedin className="w-4 h-4 text-accent" />
             </button>
-            <button className="p-2 rounded-full bg-accent/10 transition-colors">
+            <button className="p-2 rounded-full bg-accent/10 transition-colors" aria-label="Email">
               <Mail className="w-4 h-4 text-accent" />
             </button>
           </div>
@@ -146,7 +128,6 @@ const DoctorCard = ({
       </div>
     </motion.div>;
 };
-
 export const TeamSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -193,9 +174,9 @@ export const TeamSection = () => {
           <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">Echipa noastră este formată din medici cu experiență dovedită, pregătiți în cele mai prestigioase centre medicale din România și Europa, dedicați excelenței.</p>
         </motion.div>
 
-        {/* Doctors Grid - 4 on desktop, 2 on mobile */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-          {doctors.map((doctor, index) => <div key={index} className={index >= 2 ? 'hidden sm:block' : undefined}><DoctorCard doctor={doctor} index={index} /></div>)}
+        {/* Doctors Grid */}
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-2xl mx-auto">
+          {doctors.map((doctor, index) => <DoctorCard key={index} doctor={doctor} index={index} />)}
         </div>
 
       </div>
