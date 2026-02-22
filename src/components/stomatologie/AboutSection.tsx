@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Cpu, ShieldCheck, HeartPulse } from 'lucide-react';
-import clinicPhoto from '@/assets/clinic-photo.jpg';
+import clinicPhoto from '@/assets/clinic-photo.webp';
 import DisplayCards from '@/components/ui/display-cards';
 import { useClinic } from '@/context/ClinicContext';
 

@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Star, Award, GraduationCap, Linkedin, Mail } from 'lucide-react';
-import doctorPopescu from '@/assets/doctor-popescu.jpeg';
-import doctorIonescu from '@/assets/doctor-ionescu.png';
+import doctorPopescu from '@/assets/doctor-popescu.webp';
+import doctorIonescu from '@/assets/doctor-ionescu.webp';
 const doctors = [{
   name: 'Dr. Alexandru Popescu',
   role: 'Medic Implantolog',

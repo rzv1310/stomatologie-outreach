@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useClinic } from '@/context/ClinicContext';
-import heroBg from '@/assets/hero-bg-desktop.png';
-import heroMobile from '@/assets/hero-mobile.jpeg';
+import heroBg from '@/assets/hero-bg-desktop.webp';
+import heroMobile from '@/assets/hero-mobile.webp';
 
 export const HeroSection = () => {
   const clinic = useClinic();

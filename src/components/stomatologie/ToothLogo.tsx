@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import dinteContur from '@/assets/dinte-contur.jpg';
+import dinteContur from '@/assets/dinte-contur.webp';
 
 interface ToothLogoProps {
   size?: number;

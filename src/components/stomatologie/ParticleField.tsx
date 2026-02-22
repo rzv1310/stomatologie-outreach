@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import dinteContur from '@/assets/dinte-contur.jpg';
+import dinteContur from '@/assets/dinte-contur.webp';
 
 interface Tooth {
   x: number;

@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Stethoscope, Smile, Sparkles, Scissors, Crown, Baby, ArrowRight, ChevronRight } from 'lucide-react';
-import implantologieBg from '@/assets/implantologie-bg.jpeg';
-import chirurgieBg from '@/assets/chirurgie-bg.jpeg';
-import ortodontieBg from '@/assets/ortodontie-bg.png';
-import copiiBg from '@/assets/copii-bg.jpeg';
-import proteticaBg from '@/assets/protetica-bg.png';
-import albireBg from '@/assets/albire-bg.jpeg';
+import implantologieBg from '@/assets/implantologie-bg.webp';
+import chirurgieBg from '@/assets/chirurgie-bg.webp';
+import ortodontieBg from '@/assets/ortodontie-bg.webp';
+import copiiBg from '@/assets/copii-bg.webp';
+import proteticaBg from '@/assets/protetica-bg.webp';
+import albireBg from '@/assets/albire-bg.webp';
 
 const services = [{
   icon: Stethoscope,
