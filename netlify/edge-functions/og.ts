@@ -113,7 +113,7 @@ export default async (request: Request, context: Context) => {
   const hostname = url.hostname;
 
   // Skip asset requests
-  if (url.pathname.match(/\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff2?|ttf|map)$/)) {
+  if (url.pathname.match(/\.(js|css|png|jpg|jpeg|gif|svg|ico|json|woff2?|ttf|map|webp)$/)) {
     return context.next();
   }
 
