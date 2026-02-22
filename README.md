@@ -80,6 +80,6 @@ DNS should be configured with a wildcard `*.seo-doctor.ro` record pointing to th
 - [Tailwind CSS](https://tailwindcss.com/) — utility-first styling
 - [shadcn/ui](https://ui.shadcn.com/) — component library
 
+## Differences from Template
 
-
-mail contact
+- Uses WebP images instead of JPG/PNG for better compression and faster loading
