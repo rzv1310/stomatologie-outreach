@@ -198,6 +198,44 @@
       color: #818cf8;
     }
 
+    .link-box {
+      background: #0e0e16;
+      border: 1px solid #23232e;
+      border-radius: 10px;
+      padding: 0.75rem 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      height: 3rem;
+    }
+
+    .link-box-url {
+      font-size: 0.8125rem;
+      color: #818cf8;
+      word-break: break-all;
+      line-height: 1.5;
+    }
+
+    .btn-copy-link {
+      background: #312e81;
+      color: #c7d2fe;
+      flex-shrink: 0;
+      min-width: 6.5rem;
+      justify-content: center;
+    }
+
+    .btn-copy-link:hover {
+      background: #3730a3;
+      box-shadow: 0 0 16px #4338ca44;
+    }
+
+    .btn-copy-link.copied {
+      background: #059669;
+      color: #d1fae5;
+    }
+
     .actions {
       display: flex;
       gap: 0.625rem;
@@ -377,6 +415,19 @@
       });
     }
 
+    function copyLink(subdomain) {
+      const link = 'https://' + subdomain + '.' + DOMAIN_SUFFIX;
+      navigator.clipboard.writeText(link).then(() => {
+        const btn = document.getElementById('copy-link-' + subdomain);
+        btn.classList.add('copied');
+        btn.innerHTML = '&#10003; Copied';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = '&#128203; Copy link';
+        }, 2000);
+      });
+    }
+
     function getWhatsAppUrl(phone, text) {
       const cleaned = phone.replace(/[^0-9+]/g, '');
       return 'https://wa.me/' + cleaned.replace('+', '') + '?text=' + encodeURIComponent(text);
@@ -468,6 +519,10 @@ Dacă vă place, îi adăugăm logo, pozele și serviciile dvs.
             <a href="${link}" target="_blank">${subdomain}.${DOMAIN_SUFFIX}</a>
           </div>
           <div class="script-box">${scriptHTML}</div>
+          <div class="link-box">
+            <span class="link-box-url">${link}</span>
+            <button class="btn-copy-link" id="copy-link-${subdomain}" onclick="copyLink('${subdomain}')">&#128203; Copy link</button>
+          </div>
           <div class="actions">
             <button class="btn-copy" id="copy-${subdomain}" onclick="copyText('${subdomain}', buildScript(clinicMap['${subdomain}']), ${clinics.length})">&#128203; Copy</button>
             <button class="btn-whatsapp" onclick="window.open(getWhatsAppUrl('${clinic.phone}', buildScript(clinicMap['${subdomain}'])), '_blank')">&#128172; WhatsApp</button>
