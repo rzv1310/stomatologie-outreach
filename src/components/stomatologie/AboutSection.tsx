@@ -176,9 +176,14 @@ export const AboutSection = () => {
         const progress = Math.min(1, Math.max(0, scrolled / scrollableDistance));
         const targetFrame = progress * (FRAME_COUNT - 1);
 
-        // Lerp toward target — ease out near the end
-        const easedLerp = LERP_FACTOR * (1 - progress * progress * 0.7);
-        smoothFrameRef.current += (targetFrame - smoothFrameRef.current) * easedLerp;
+        // Lerp toward target — snap directly when gap is small to avoid slow crawl
+        const gap = Math.abs(targetFrame - smoothFrameRef.current);
+        if (gap < 3) {
+          smoothFrameRef.current = targetFrame;
+        } else {
+          const easedLerp = LERP_FACTOR * (1 - progress * progress * 0.7);
+          smoothFrameRef.current += (targetFrame - smoothFrameRef.current) * easedLerp;
+        }
         const displayFrame = Math.min(
           FRAME_COUNT - 1,
           Math.max(0, Math.round(smoothFrameRef.current)),
