@@ -18,7 +18,7 @@ const Index = () => {
   }, [clinic.city]);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-clip">
       <Navbar />
       <main>
         <HeroSection />

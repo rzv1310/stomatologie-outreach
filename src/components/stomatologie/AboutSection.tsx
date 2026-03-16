@@ -1,9 +1,39 @@
-import { useRef } from 'react';
+import { useRef, useEffect, useState, useCallback } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Cpu, ShieldCheck, HeartPulse } from 'lucide-react';
-import clinicPhoto from '@/assets/clinic-photo.webp';
 import DisplayCards from '@/components/ui/display-cards';
-import { useClinic } from '@/context/ClinicContext';
+
+const FRAME_COUNT = 90;
+const FRAME_PREFIX = '/frames/frame_';
+const HEIGHT_VH = 400;
+const PRELOAD_AHEAD = 10;
+const BATCH_SIZE = 6;
+
+function getFrameSrc(index: number): string {
+  return `${FRAME_PREFIX}${String(index).padStart(4, '0')}.webp`;
+}
+
+function drawCover(
+  ctx: CanvasRenderingContext2D,
+  img: HTMLImageElement,
+  canvasW: number,
+  canvasH: number,
+) {
+  const imgRatio = img.naturalWidth / img.naturalHeight;
+  const canvasRatio = canvasW / canvasH;
+  let sw = img.naturalWidth;
+  let sh = img.naturalHeight;
+  let sx = 0;
+  let sy = 0;
+  if (imgRatio > canvasRatio) {
+    sw = img.naturalHeight * canvasRatio;
+    sx = (img.naturalWidth - sw) / 2;
+  } else {
+    sh = img.naturalWidth / canvasRatio;
+    sy = (img.naturalHeight - sh) / 2;
+  }
+  ctx.drawImage(img, sx, sy, sw, sh, 0, 0, canvasW, canvasH);
+}
 
 const featureCards = [
   {
@@ -40,9 +70,135 @@ const featureCards = [
 
 
 export const AboutSection = () => {
-  const clinic = useClinic();
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const framesRef = useRef<(HTMLImageElement | null)[]>([]);
+  const currentFrameRef = useRef(0);
+  const rafRef = useRef<number>(0);
+  const [loaded, setLoaded] = useState(false);
+  const [loadProgress, setLoadProgress] = useState(0);
+
+  const cardsRef = useRef(null);
+  const isInView = useInView(cardsRef, { once: true, margin: "-100px" });
+
+  const loadFrame = useCallback(
+    (index: number): Promise<HTMLImageElement> => {
+      return new Promise((resolve, reject) => {
+        if (framesRef.current[index]) {
+          resolve(framesRef.current[index]!);
+          return;
+        }
+        const img = new Image();
+        img.onload = () => {
+          framesRef.current[index] = img;
+          resolve(img);
+        };
+        img.onerror = reject;
+        img.src = getFrameSrc(index + 1);
+      });
+    },
+    [],
+  );
+
+  // Preload all frames in batches
+  useEffect(() => {
+    framesRef.current = new Array(FRAME_COUNT).fill(null);
+    let cancelled = false;
+    let loadedCount = 0;
+
+    async function loadAll() {
+      for (let start = 0; start < FRAME_COUNT; start += BATCH_SIZE) {
+        if (cancelled) return;
+        const batch = [];
+        for (let i = start; i < Math.min(start + BATCH_SIZE, FRAME_COUNT); i++) {
+          batch.push(
+            loadFrame(i).catch(() => {/* skip failed frame */}).then(() => {
+              loadedCount++;
+              if (!cancelled) setLoadProgress(loadedCount / FRAME_COUNT);
+            }),
+          );
+        }
+        await Promise.all(batch);
+      }
+      if (!cancelled) setLoaded(true);
+    }
+
+    loadAll();
+    return () => { cancelled = true; };
+  }, [loadFrame]);
+
+  // Size canvas and draw the first frame once loaded
+  useEffect(() => {
+    if (!loaded) return;
+    const canvas = canvasRef.current;
+    const firstFrame = framesRef.current[0];
+    if (!canvas || !firstFrame) return;
+    const rect = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    const ctx = canvas.getContext('2d');
+    if (ctx) drawCover(ctx, firstFrame, canvas.width, canvas.height);
+  }, [loaded]);
+
+  // Scroll-driven rendering loop
+  useEffect(() => {
+    if (!loaded) return;
+    const canvas = canvasRef.current;
+    const section = sectionRef.current;
+    if (!canvas || !section) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const resizeCanvas = () => {
+      const r = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = r.width * dpr;
+      canvas.height = r.height * dpr;
+      const frame = framesRef.current[currentFrameRef.current];
+      if (frame) drawCover(ctx, frame, canvas.width, canvas.height);
+    };
+
+    window.addEventListener('resize', resizeCanvas);
+
+    const tick = () => {
+      const rect = section.getBoundingClientRect();
+      const viewportH = window.innerHeight;
+      const scrollableDistance = rect.height - viewportH;
+
+      if (scrollableDistance > 0) {
+        const scrolled = -rect.top;
+        const progress = Math.min(1, Math.max(0, scrolled / scrollableDistance));
+        const targetFrame = Math.min(
+          FRAME_COUNT - 1,
+          Math.round(progress * (FRAME_COUNT - 1)),
+        );
+
+        if (targetFrame !== currentFrameRef.current) {
+          const frame = framesRef.current[targetFrame];
+          if (frame) {
+            drawCover(ctx, frame, canvas.width, canvas.height);
+            currentFrameRef.current = targetFrame;
+          }
+        }
+
+        for (let i = 1; i <= PRELOAD_AHEAD; i++) {
+          const ahead = targetFrame + i;
+          const behind = targetFrame - i;
+          if (ahead < FRAME_COUNT && !framesRef.current[ahead]) loadFrame(ahead);
+          if (behind >= 0 && !framesRef.current[behind]) loadFrame(behind);
+        }
+      }
+
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    rafRef.current = requestAnimationFrame(tick);
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener('resize', resizeCanvas);
+    };
+  }, [loaded, loadFrame]);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -65,95 +221,101 @@ export const AboutSection = () => {
   };
 
   return (
-    <section id="about" className="relative py-16 sm:py-24 md:py-20 overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
-      <div className="absolute inset-0 grid-pattern opacity-50" />
-
-      {/* Floating Elements */}
-      <motion.div
-        className="absolute top-20 right-10 w-64 h-64 rounded-full bg-accent/5 blur-3xl"
-        animate={{
-          scale: [1, 1.2, 1],
-          rotate: [0, 90, 0],
+    <section
+      id="about"
+      ref={sectionRef}
+      style={{ height: `${HEIGHT_VH}vh`, position: 'relative' }}
+    >
+      <div
+        style={{
+          position: 'sticky',
+          top: 0,
+          height: '100vh',
+          width: '100%',
+          overflow: 'hidden',
         }}
-        transition={{ duration: 15, repeat: Infinity }}
-      />
+      >
+        {/* Background */}
+        <div className="absolute inset-0" style={{ background: '#fdfdfd' }} />
 
-      <div className="container mx-auto px-4 relative z-10" ref={ref}>
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="max-w-6xl mx-auto"
-        >
-          {/* Section Header */}
-          <motion.div variants={itemVariants} className="text-center mb-10 sm:mb-20">
-            <motion.span
-              className="inline-block px-4 py-2 rounded-full glass text-sm font-medium text-accent mb-4"
-              whileHover={{ scale: 1.05 }}
-            >
-              Despre Noi
-            </motion.span>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-6">
-              <span className="text-foreground">Excelență în </span>
-              <span className="gradient-text">Stomatologie</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-               De peste 7 ani, suntem dedicați în furnizarea de servicii stomatologice
-               de înaltă calitate în {clinic.city}.
-            </p>
-          </motion.div>
-
+        <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mb-16 md:mb-24">
-            {/* Left - Image/Visual */}
-            <motion.div
-              variants={itemVariants}
-              className="relative"
-            >
-              <div className="relative aspect-square max-w-md mx-auto">
-                {/* Clinic Photo */}
-                <motion.div
-                  className="absolute inset-8 rounded-3xl overflow-hidden"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <img
-                    src={clinicPhoto}
-                    alt="Cabinet stomatologic modern"
-                    className="w-full h-full object-cover"
-                  />
-                </motion.div>
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center w-full">
+            {/* Left - Scroll Video */}
+            <div className="relative aspect-square max-w-md mx-auto w-full rounded-3xl overflow-hidden" style={{ background: '#fdfdfd' }}>
+              <canvas
+                ref={canvasRef}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  display: 'block',
+                }}
+              />
 
-                {/* Floating Badge */}
-                <motion.div
-                  className="absolute -top-4 -right-4 glass px-4 py-2 rounded-full"
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 3, repeat: Infinity }}
+              {/* Loading overlay */}
+              {!loaded && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    background: '#fdfdfd',
+                    color: '#000',
+                    gap: '16px',
+                  }}
                 >
-                  <span className="text-sm font-medium text-accent">✨ Premium</span>
-                </motion.div>
-              </div>
-            </motion.div>
+                  <div
+                    style={{
+                      width: '200px',
+                      height: '4px',
+                      background: '#ddd',
+                      borderRadius: '2px',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: `${loadProgress * 100}%`,
+                        height: '100%',
+                        background: '#888',
+                        transition: 'width 0.15s ease-out',
+                      }}
+                    />
+                  </div>
+                  <span style={{ fontSize: '14px', opacity: 0.6 }}>
+                    Loading {Math.round(loadProgress * 100)}%
+                  </span>
+                </div>
+              )}
+            </div>
 
             {/* Right - Content */}
-            <motion.div variants={itemVariants} className="space-y-8">
-              <div>
-                <h3 className="font-display text-2xl font-bold mb-4 text-foreground">
-                  De ce să ne alegi ?
-                </h3>
-                <p className="text-muted-foreground leading-relaxed mb-12">
-                  Pentru noi - fiecare pacient este unic. Oferim tratamente personalizate,
-                  într-un mediu confortabil și sigur.
-                </p>
-              </div>
+            <motion.div
+              ref={cardsRef}
+              variants={containerVariants}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <motion.div variants={itemVariants} className="space-y-8">
+                <div>
+                  <h2 className="font-display text-2xl font-bold mb-4 text-foreground">
+                    De ce să ne alegi ?
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed mb-12">
+                    Pentru noi - fiecare pacient este unic. Oferim tratamente personalizate,
+                    într-un mediu confortabil și sigur.
+                  </p>
+                </div>
 
-              {/* Features Display Cards */}
-              <DisplayCards cards={featureCards} />
+                {/* Features Display Cards */}
+                <DisplayCards cards={featureCards} />
+              </motion.div>
             </motion.div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
