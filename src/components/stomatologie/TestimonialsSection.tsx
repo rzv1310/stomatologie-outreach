@@ -95,16 +95,8 @@ export const TestimonialsSection = () => {
       <div className="absolute inset-0 grid-pattern" />
 
       {/* Decorative Elements */}
-      <motion.div
-        className="absolute top-20 left-1/4 w-64 h-64 rounded-full bg-primary/5 blur-3xl"
-        animate={{ scale: [1, 1.3, 1] }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-20 right-1/4 w-80 h-80 rounded-full bg-accent/5 blur-3xl"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 10, repeat: Infinity }}
-      />
+      <div className="absolute top-20 left-1/4 w-64 h-64 rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute bottom-20 right-1/4 w-80 h-80 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section Header */}

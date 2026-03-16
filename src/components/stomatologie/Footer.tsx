@@ -51,16 +51,8 @@ export const Footer = () => {
       <div className="absolute inset-0 grid-pattern opacity-10" />
 
       {/* Floating Orbs */}
-      <motion.div
-        className="absolute top-20 left-20 w-40 h-40 rounded-full bg-white/5 blur-3xl"
-        animate={{ scale: [1, 1.2, 1] }}
-        transition={{ duration: 8, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-20 right-20 w-60 h-60 rounded-full bg-white/5 blur-3xl"
-        animate={{ scale: [1, 1.3, 1] }}
-        transition={{ duration: 10, repeat: Infinity }}
-      />
+      <div className="absolute top-20 left-20 w-40 h-40 rounded-full bg-white/5 blur-3xl" />
+      <div className="absolute bottom-20 right-20 w-60 h-60 rounded-full bg-white/5 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Main Footer Content */}

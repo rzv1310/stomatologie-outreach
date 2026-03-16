@@ -93,16 +93,8 @@ export const ContactSection = () => {
       <div className="absolute inset-0 grid-pattern opacity-50" />
 
       {/* Floating Elements */}
-      <motion.div
-        className="absolute top-1/3 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl"
-        animate={{ scale: [1, 1.2, 1], x: [0, 30, 0] }}
-        transition={{ duration: 12, repeat: Infinity }}
-      />
-      <motion.div
-        className="absolute bottom-1/3 right-10 w-80 h-80 rounded-full bg-accent/5 blur-3xl"
-        animate={{ scale: [1, 1.3, 1], x: [0, -30, 0] }}
-        transition={{ duration: 15, repeat: Infinity }}
-      />
+      <div className="absolute top-1/3 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute bottom-1/3 right-10 w-80 h-80 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section Header */}

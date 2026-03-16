@@ -54,11 +54,7 @@ export const TarifeSection = () => {
       <div className="absolute inset-0 grid-pattern opacity-50" />
 
       {/* Floating orb */}
-      <motion.div
-        className="absolute top-1/3 left-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl"
-        animate={{ x: [0, 60, 0], scale: [1, 1.2, 1] }}
-        transition={{ duration: 12, repeat: Infinity }}
-      />
+      <div className="absolute top-1/3 left-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Header */}

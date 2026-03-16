@@ -140,13 +140,7 @@ export const TeamSection = () => {
       <div className="absolute inset-0 grid-pattern opacity-50" />
 
       {/* Floating Elements */}
-      <motion.div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-accent/5 blur-3xl" animate={{
-      x: [0, -50, 0],
-      scale: [1, 1.2, 1]
-    }} transition={{
-      duration: 10,
-      repeat: Infinity
-    }} />
+      <div className="absolute top-1/4 right-0 w-96 h-96 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section Header */}

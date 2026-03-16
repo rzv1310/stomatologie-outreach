@@ -142,20 +142,8 @@ export const ServicesSection = () => {
       <div className="absolute inset-0 grid-pattern" />
 
       {/* Floating Orbs */}
-      <motion.div className="absolute top-40 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" animate={{
-      scale: [1, 1.2, 1],
-      x: [0, 50, 0]
-    }} transition={{
-      duration: 12,
-      repeat: Infinity
-    }} />
-      <motion.div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl" animate={{
-      scale: [1, 1.3, 1],
-      y: [0, -50, 0]
-    }} transition={{
-      duration: 15,
-      repeat: Infinity
-    }} />
+      <div className="absolute top-40 left-10 w-72 h-72 rounded-full bg-primary/5 blur-3xl" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section Header */}
