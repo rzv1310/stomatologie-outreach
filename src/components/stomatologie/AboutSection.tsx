@@ -7,8 +7,8 @@ const FRAME_COUNT = 150;
 const FRAME_PREFIX = '/frames/frame_';
 const HEIGHT_VH = 500;
 const LERP_FACTOR = 0.12;
-const PRELOAD_AHEAD = 10;
-const BATCH_SIZE = 6;
+const PRELOAD_AHEAD = 15;
+const BATCH_SIZE = 30;
 
 function getFrameSrc(index: number): string {
   return `${FRAME_PREFIX}${String(index).padStart(4, '0')}.webp`;
@@ -102,7 +102,7 @@ export const AboutSection = () => {
     [],
   );
 
-  // Preload all frames in batches
+  // Preload all frames in batches, show canvas as soon as first frame is ready
   useEffect(() => {
     framesRef.current = new Array(FRAME_COUNT).fill(null);
     let cancelled = false;
@@ -116,13 +116,16 @@ export const AboutSection = () => {
           batch.push(
             loadFrame(i).catch(() => {/* skip failed frame */}).then(() => {
               loadedCount++;
-              if (!cancelled) setLoadProgress(loadedCount / FRAME_COUNT);
+              if (!cancelled) {
+                setLoadProgress(loadedCount / FRAME_COUNT);
+                // Show canvas as soon as the first frame is available
+                if (loadedCount === 1) setLoaded(true);
+              }
             }),
           );
         }
         await Promise.all(batch);
       }
-      if (!cancelled) setLoaded(true);
     }
 
     loadAll();
