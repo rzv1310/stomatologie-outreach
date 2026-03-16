@@ -1,6 +1,6 @@
 {
-  "frameCount": 90,
-  "fps": 15,
+  "frameCount": 150,
+  "fps": 25,
   "duration": 6.016,
   "width": 1280,
   "pattern": "/frames/frame_%04d.webp",

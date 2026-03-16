@@ -3,9 +3,10 @@ import { motion, useInView } from 'framer-motion';
 import { Cpu, ShieldCheck, HeartPulse } from 'lucide-react';
 import DisplayCards from '@/components/ui/display-cards';
 
-const FRAME_COUNT = 90;
+const FRAME_COUNT = 150;
 const FRAME_PREFIX = '/frames/frame_';
-const HEIGHT_VH = 400;
+const HEIGHT_VH = 500;
+const LERP_FACTOR = 0.12;
 const PRELOAD_AHEAD = 10;
 const BATCH_SIZE = 6;
 
@@ -74,6 +75,7 @@ export const AboutSection = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const framesRef = useRef<(HTMLImageElement | null)[]>([]);
   const currentFrameRef = useRef(0);
+  const smoothFrameRef = useRef(0);
   const rafRef = useRef<number>(0);
   const [loaded, setLoaded] = useState(false);
   const [loadProgress, setLoadProgress] = useState(0);
@@ -169,22 +171,26 @@ export const AboutSection = () => {
       if (scrollableDistance > 0) {
         const scrolled = -rect.top;
         const progress = Math.min(1, Math.max(0, scrolled / scrollableDistance));
-        const targetFrame = Math.min(
+        const targetFrame = progress * (FRAME_COUNT - 1);
+
+        // Lerp toward target for smooth easing
+        smoothFrameRef.current += (targetFrame - smoothFrameRef.current) * LERP_FACTOR;
+        const displayFrame = Math.min(
           FRAME_COUNT - 1,
-          Math.round(progress * (FRAME_COUNT - 1)),
+          Math.max(0, Math.round(smoothFrameRef.current)),
         );
 
-        if (targetFrame !== currentFrameRef.current) {
-          const frame = framesRef.current[targetFrame];
+        if (displayFrame !== currentFrameRef.current) {
+          const frame = framesRef.current[displayFrame];
           if (frame) {
             drawCover(ctx, frame, canvas.width, canvas.height);
-            currentFrameRef.current = targetFrame;
+            currentFrameRef.current = displayFrame;
           }
         }
 
         for (let i = 1; i <= PRELOAD_AHEAD; i++) {
-          const ahead = targetFrame + i;
-          const behind = targetFrame - i;
+          const ahead = displayFrame + i;
+          const behind = displayFrame - i;
           if (ahead < FRAME_COUNT && !framesRef.current[ahead]) loadFrame(ahead);
           if (behind >= 0 && !framesRef.current[behind]) loadFrame(behind);
         }
@@ -238,11 +244,11 @@ export const AboutSection = () => {
         {/* Background */}
         <div className="absolute inset-0" style={{ background: '#fdfdfd' }} />
 
-        <div className="container mx-auto px-4 relative z-10 h-full flex items-center">
+        <div className="container mx-auto px-4 relative z-10 h-full flex items-start pt-24 lg:items-center lg:pt-0">
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center w-full">
+          <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 items-center w-full">
             {/* Left - Scroll Video */}
-            <div className="relative aspect-square max-w-md mx-auto w-full rounded-3xl overflow-hidden" style={{ background: '#fdfdfd' }}>
+            <div className="relative aspect-square max-w-[240px] sm:max-w-xs lg:max-w-md mx-auto w-full rounded-3xl overflow-hidden" style={{ background: '#fdfdfd' }}>
               <canvas
                 ref={canvasRef}
                 style={{
