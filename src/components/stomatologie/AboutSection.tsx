@@ -5,7 +5,7 @@ import DisplayCards from '@/components/ui/display-cards';
 
 const FRAME_COUNT = 150;
 const FRAME_PREFIX = '/frames/frame_';
-const HEIGHT_VH = 500;
+const HEIGHT_VH = 375;
 const LERP_FACTOR = 0.12;
 const PRELOAD_AHEAD = 15;
 const BATCH_SIZE = 30;
@@ -176,8 +176,9 @@ export const AboutSection = () => {
         const progress = Math.min(1, Math.max(0, scrolled / scrollableDistance));
         const targetFrame = progress * (FRAME_COUNT - 1);
 
-        // Lerp toward target for smooth easing
-        smoothFrameRef.current += (targetFrame - smoothFrameRef.current) * LERP_FACTOR;
+        // Lerp toward target — ease out near the end
+        const easedLerp = LERP_FACTOR * (1 - progress * progress * 0.7);
+        smoothFrameRef.current += (targetFrame - smoothFrameRef.current) * easedLerp;
         const displayFrame = Math.min(
           FRAME_COUNT - 1,
           Math.max(0, Math.round(smoothFrameRef.current)),
@@ -247,11 +248,11 @@ export const AboutSection = () => {
         {/* Background */}
         <div className="absolute inset-0" style={{ background: '#fdfdfd' }} />
 
-        <div className="container mx-auto px-4 relative z-10 h-full flex items-start pt-24 lg:items-center lg:pt-0">
+        <div className="container mx-auto px-4 relative z-10 h-full flex items-start pt-20 pb-8 lg:items-center lg:pt-0 lg:pb-0">
           {/* Main Content Grid */}
-          <div className="grid lg:grid-cols-2 gap-4 lg:gap-16 items-center w-full">
+          <div className="grid lg:grid-cols-2 gap-3 lg:gap-16 items-center w-full">
             {/* Left - Scroll Video */}
-            <div className="relative aspect-square max-w-[240px] sm:max-w-xs lg:max-w-md mx-auto w-full rounded-3xl overflow-hidden" style={{ background: '#fdfdfd' }}>
+            <div className="relative aspect-[4/3] lg:aspect-square max-w-[600px] lg:max-w-md mx-auto w-full rounded-3xl overflow-hidden" style={{ background: '#fdfdfd' }}>
               <canvas
                 ref={canvasRef}
                 style={{
@@ -307,13 +308,14 @@ export const AboutSection = () => {
               variants={containerVariants}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
+              className="mb-16 lg:mb-24"
             >
               <motion.div variants={itemVariants} className="space-y-8">
                 <div>
                   <h2 className="font-display text-2xl font-bold mb-4 text-foreground">
                     De ce să ne alegi ?
                   </h2>
-                  <p className="text-muted-foreground leading-relaxed mb-12">
+                  <p className="text-muted-foreground leading-relaxed mb-4 lg:mb-12">
                     Pentru noi - fiecare pacient este unic. Oferim tratamente personalizate,
                     într-un mediu confortabil și sigur.
                   </p>
